@@ -60,7 +60,7 @@ public class InputManager : MonoBehaviour
     }
 
     private void SetActionPath(InputAction action, string binding) {
-        action.AddBinding(binding);
+        action.ChangeBinding(0).WithPath(binding);
         action.Enable();
     }
 }
