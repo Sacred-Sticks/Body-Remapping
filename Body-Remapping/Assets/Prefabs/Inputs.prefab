@@ -84,16 +84,16 @@ MonoBehaviour:
     ActionType: 0
   - Binding: <Keyboard>/W
     InputType: 12
-    ActionType: 1
+    ActionType: 0
   - Binding: <Keyboard>/A
     InputType: 13
-    ActionType: 1
+    ActionType: 0
   - Binding: <Keyboard>/S
     InputType: 14
-    ActionType: 1
+    ActionType: 0
   - Binding: <Keyboard>/D
     InputType: 15
-    ActionType: 1
+    ActionType: 0
 --- !u!114 &3127997135051336620
 MonoBehaviour:
   m_ObjectHideFlags: 0
