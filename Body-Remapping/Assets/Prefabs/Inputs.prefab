@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3127997135051336273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3127997135051336623}
+  - component: {fileID: 3127997135051336622}
+  - component: {fileID: 3127997135051336620}
+  m_Layer: 0
+  m_Name: Inputs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3127997135051336623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127997135051336273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3127997135051336622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127997135051336273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9757701d48367974193359b6398c112d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActionsData:
+  - Binding: <OpenXRHmd>/devicePosition
+    InputType: 0
+    ActionType: 0
+  - Binding: <OpenXRHmd>/deviceRotation
+    InputType: 1
+    ActionType: 0
+  - Binding: <OpenXRHmd>/deviceVelocity
+    InputType: 2
+    ActionType: 0
+  - Binding: <OpenXRHmd>/deviceVelocity
+    InputType: 3
+    ActionType: 0
+  - Binding: <XRController>{LeftHand}/devicePosition
+    InputType: 4
+    ActionType: 0
+  - Binding: <XRController>{LeftHand}/deviceRotation
+    InputType: 5
+    ActionType: 0
+  - Binding: <XRController>{LeftHand}/deviceVelocity
+    InputType: 6
+    ActionType: 0
+  - Binding: <XRController>{LeftHand}/deviceAngularVelocity
+    InputType: 7
+    ActionType: 0
+  - Binding: <XRController>{RightHand}/devicePosition
+    InputType: 8
+    ActionType: 0
+  - Binding: <XRController>{RightHand}/deviceRotation
+    InputType: 9
+    ActionType: 0
+  - Binding: <XRController>{RightHand}/deviceVelocity
+    InputType: 10
+    ActionType: 0
+  - Binding: <XRController>{RightHand}/deviceAngularVelocity
+    InputType: 11
+    ActionType: 0
+  - Binding: <Keyboard>/W
+    InputType: 12
+    ActionType: 1
+  - Binding: <Keyboard>/A
+    InputType: 13
+    ActionType: 1
+  - Binding: <Keyboard>/S
+    InputType: 14
+    ActionType: 1
+  - Binding: <Keyboard>/D
+    InputType: 15
+    ActionType: 1
+--- !u!114 &3127997135051336620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127997135051336273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4da806ac873ed248bd082732efd19cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,0 +1,182 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Left Controller",
+            "id": "6f2fa3af-2fd1-4d30-97d5-446e31a7c434",
+            "actions": [
+                {
+                    "name": "Velocity",
+                    "type": "Value",
+                    "id": "fa6ee7da-aed1-4fcf-9446-f548b4ad091f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Angular Velocity",
+                    "type": "Value",
+                    "id": "4294a276-0a86-42da-b0f1-6a677b79ed41",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grip",
+                    "type": "Button",
+                    "id": "ae881179-e93c-4938-acc1-b14682e2ed1a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Trigger",
+                    "type": "Button",
+                    "id": "59221ca9-9ac5-4b68-9b0b-d2f981f19ef3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "24ee854f-3a92-4db6-9ca0-04a993cb2994",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53f7645d-ec91-43a2-8f63-414fed7970f8",
+                    "path": "<XRController>{LeftHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Angular Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d27fefd-a772-43a5-a6af-5055e465adb9",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81c436ec-c85e-4d53-8a4b-cdc288be716e",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Right Controller",
+            "id": "7e1d3022-16a2-44f4-b7e5-c08a80fa8aa2",
+            "actions": [
+                {
+                    "name": "Velocity",
+                    "type": "Value",
+                    "id": "6156517f-5697-42f4-a87f-3e6d18f9f79b",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Angular Velocity",
+                    "type": "Value",
+                    "id": "945bd778-6f6f-4251-8eba-4211095f85c3",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grip",
+                    "type": "Button",
+                    "id": "7e83e2d9-20db-44dc-87fd-e12bdb83ae1d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Trigger",
+                    "type": "Button",
+                    "id": "de617071-a671-4fc1-bf00-f53329ab20f5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cb32718a-6c4f-42cd-ba5d-43404b72cbde",
+                    "path": "<XRController>{RightHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad0c134b-d21f-4c51-8512-b21797aaeed5",
+                    "path": "<XRController>{RightHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Angular Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "238542f4-44b0-40d9-807c-25152c56170a",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c98f9a6-cacc-47e3-ae13-8d7e0f432028",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
