@@ -1,7 +1,8 @@
 using System;
 using UnityEngine;
 
-public class IKFootSolver : MonoBehaviour {
+public class IKFootSolver : MonoBehaviour
+{
     [SerializeField] private LayerMask groundLayers;
     [SerializeField] private Transform characterTransform;
     [SerializeField] private IKFootSolver otherFoot;
@@ -13,7 +14,8 @@ public class IKFootSolver : MonoBehaviour {
     private Vector3 oldNormal, currentNormal, newNormal;
     private bool afterFirstMove;
 
-    private void Start() {
+    private void Start()
+    {
         footSpacing = transform.localPosition.x;
         currentPos = newPos = oldPos = transform.position;
         currentNormal = newNormal = oldNormal = transform.up;
@@ -21,15 +23,18 @@ public class IKFootSolver : MonoBehaviour {
         afterFirstMove = false;
     }
 
-    private void Update() {
-        if (afterFirstMove) {
+    private void Update()
+    {
+        if (afterFirstMove)
+        {
             transform.position = currentPos + positionOffset;
             transform.rotation = Quaternion.LookRotation(currentNormal) * Quaternion.Euler(rotationOffset);
         }
 
         CheckMovement();
 
-        if (IsMoving()) {
+        if (IsMoving())
+        {
             var tempPos = Vector3.Lerp(oldPos, newPos, lerp);
             tempPos.y += Mathf.Sin(lerp * Mathf.PI) * stepHeight;
 
@@ -43,11 +48,13 @@ public class IKFootSolver : MonoBehaviour {
         oldNormal = newNormal;
     }
 
-    private void CheckMovement() {
+    private void CheckMovement()
+    {
         Ray ray = new(characterTransform.position + (characterTransform.right * footSpacing) + (Vector3.up * 2), Vector3.down);
         Physics.Raycast(ray: ray, hitInfo: out RaycastHit hit, Mathf.Infinity, layerMask: groundLayers);
 
-        if (Vector3.SqrMagnitude(newPos - hit.point) > Mathf.Pow(stepDistance, 2) && !otherFoot.IsMoving() && !IsMoving()) {
+        if (Vector3.SqrMagnitude(newPos - hit.point) > Mathf.Pow(stepDistance, 2) && !otherFoot.IsMoving() && !IsMoving())
+        {
             lerp = 0;
             int direction = characterTransform.InverseTransformPoint(hit.point).z > characterTransform.InverseTransformPoint(newPos).z ? 1 : -1;
             newPos = hit.point + characterTransform.forward * direction * stepLength;
@@ -55,7 +62,8 @@ public class IKFootSolver : MonoBehaviour {
         }
     }
 
-    private bool IsMoving() {
+    private bool IsMoving()
+    {
         return lerp < 1;
     }
 }
