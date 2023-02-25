@@ -1,8 +1,8 @@
 using UnityEngine;
-
-[CreateAssetMenu (fileName =  "Body Joints", menuName = "Remapping/Body Joints")]
+[CreateAssetMenu(fileName = "Body Joints", menuName = "Remapping/Body Joints")]
 public class BodyJoints : ScriptableObject
 {
+
     public Transform Head;
     public Transform LeftHand;
     public Transform LeftShoulder;
@@ -13,7 +13,7 @@ public class BodyJoints : ScriptableObject
     public Transform RightShoulder;
     public Transform RightHand;
 
-    public void SetupBones(Transform head, Transform leftHand, Transform leftShoulder, Transform leftLeg, Transform rightLeg, Transform rightShoulder, Transform rightHand) 
+    public void SetupBones(Transform head, Transform leftHand, Transform leftShoulder, Transform leftLeg, Transform rightLeg, Transform rightShoulder, Transform rightHand)
     {
         Head = head;
         LeftHand = leftHand;
@@ -25,4 +25,5 @@ public class BodyJoints : ScriptableObject
         RightShoulder = rightShoulder;
         RightHand = rightHand;
     }
+
 }

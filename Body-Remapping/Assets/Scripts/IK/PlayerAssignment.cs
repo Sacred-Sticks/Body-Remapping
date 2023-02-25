@@ -1,50 +1,21 @@
 using UnityEngine;
+using InputManagement;
+using ReferenceVariables;
 
 public class PlayerAssignment : MonoBehaviour
 {
-    [SerializeField] private InputManager inputManager;
-    [Space]
     [SerializeField] private Transform headset, leftController, rightController, character;
-
-    private void Start()
+    [SerializeField] private Vector3Reference position;
+    //[SerializeField] private QuaternionReference rotation;
+    
+    private void SetPosition()
     {
-        inputManager.OnInputEvent += CallOnInput;
+        transform.position = position.Value.x * character.right + position.Value.y * character.up + position.Value.z * character.forward;
     }
 
-    private void CallOnInput(object sender, PlayerInputArguments e)
+    private void SetRotation()
     {
-        switch (e.InputType)
-        {
-            case Enums.InputType.HMD_Position:
-                SetPosition(headset, e.Context.ReadValue<Vector3>());
-                break;
-            case Enums.InputType.HMD_Rotation:
-                SetRotation(headset, e.Context.ReadValue<Quaternion>());
-                break;
-            case Enums.InputType.L_Controller_Position:
-                SetPosition(leftController, e.Context.ReadValue<Vector3>());
-                break;
-            case Enums.InputType.L_Controller_Rotation:
-                SetRotation(leftController, e.Context.ReadValue<Quaternion>());
-                break;
-            case Enums.InputType.R_Controller_Position:
-                SetPosition(rightController, e.Context.ReadValue<Vector3>());
-                break;
-            case Enums.InputType.R_Controller_Rotation:
-                SetRotation(rightController, e.Context.ReadValue<Quaternion>());
-                break;
-            default:
-                break;
-        }
+        //transform.rotation = rotation * character.rotation;
     }
 
-    private void SetPosition(Transform transform, Vector3 position)
-    {
-        transform.position = position.x * character.right + position.y * character.up + position.z * character.forward;
-    }
-
-    private void SetRotation(Transform transform, Quaternion rotation)
-    {
-        transform.rotation = rotation * character.rotation;
-    }
 }

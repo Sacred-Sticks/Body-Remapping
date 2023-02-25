@@ -1,7 +1,7 @@
 using UnityEngine;
-
 public class Head : MonoBehaviour
 {
+
     [SerializeField] private Transform rootObject, followObject;
     [SerializeField] private Vector3 positionOffset, rotationOffset, headBodyOffset;
 
@@ -15,4 +15,5 @@ public class Head : MonoBehaviour
         transform.position = followObject.TransformPoint(positionOffset);
         transform.rotation = followObject.rotation * Quaternion.Euler(rotationOffset);
     }
+
 }

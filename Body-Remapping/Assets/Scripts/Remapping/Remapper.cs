@@ -1,7 +1,7 @@
 using UnityEngine;
-
 public class Remapper : MonoBehaviour
 {
+
     [SerializeField] private BodyMeasurements userMeasurements;
     [SerializeField] private BodyMeasurements avatarMeasurements;
     [Space]
@@ -17,8 +17,8 @@ public class Remapper : MonoBehaviour
     [SerializeField] private Transform LeftControllerSimulator;
     [SerializeField] private Transform RightControllerSimulator;
 
-    float leftArmScale;
-    float rightArmScale;
+    private float leftArmScale;
+    private float rightArmScale;
 
     private void Start()
     {
@@ -37,8 +37,9 @@ public class Remapper : MonoBehaviour
     private Vector3 ScaleHand(Transform controller, Transform playerShoulder, float scale, Transform avatarShoulder)
     {
         var direction = (controller.position - playerShoulder.position).normalized;
-        var defaultLength = Vector3.Distance(playerShoulder.position, controller.position);
-        var scaledLength = defaultLength * scale;
-        return avatarShoulder.position + (direction * scaledLength);
+        float defaultLength = Vector3.Distance(playerShoulder.position, controller.position);
+        float scaledLength = defaultLength * scale;
+        return avatarShoulder.position + direction * scaledLength;
     }
+
 }

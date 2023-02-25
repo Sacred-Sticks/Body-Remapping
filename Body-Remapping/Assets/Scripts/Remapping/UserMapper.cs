@@ -1,9 +1,20 @@
+using System;
 using UnityEngine;
-
-public class UserMapper : MonoBehaviour
+namespace Remapping
 {
-    public void MeasureUser()
+    public class UserMapper : MonoBehaviour
     {
+        private enum MappingStatus
+        {
+            None,
+            Shoulder,
+            Complete,
+        }
+
+        public void MeasureUser()
+        {
+
+        }
 
     }
 }

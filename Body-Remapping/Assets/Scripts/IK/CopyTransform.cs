@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
-
-public class CopyTransform: MonoBehaviour
+public class CopyTransform : MonoBehaviour
 {
+
     [SerializeField] private Transform target;
     [SerializeField] private bool position;
     [SerializeField] private Vector3 posOffset;
@@ -15,16 +15,15 @@ public class CopyTransform: MonoBehaviour
     {
         if (position)
             StartCoroutine(CopyPosition());
-        if (rotation) 
+        if (rotation)
             StartCoroutine(CopyRotation());
-        if (scale) 
+        if (scale)
             StartCoroutine(CopyScale());
     }
 
     private IEnumerator CopyPosition()
     {
-        while (true)
-        {
+        while (true) {
             transform.position = target.position + (posOffset.x * transform.right + posOffset.y * transform.up + posOffset.z * transform.forward);
             yield return new WaitForEndOfFrame();
         }
@@ -32,8 +31,7 @@ public class CopyTransform: MonoBehaviour
 
     private IEnumerator CopyRotation()
     {
-        while (true)
-        {
+        while (true) {
             transform.rotation = target.rotation * Quaternion.Euler(rotOffset);
             yield return new WaitForEndOfFrame();
         }
@@ -41,10 +39,10 @@ public class CopyTransform: MonoBehaviour
 
     private IEnumerator CopyScale()
     {
-        while (true)
-        {
+        while (true) {
             transform.localScale = target.localScale + scaleOffset;
             yield return new WaitForEndOfFrame();
         }
     }
+
 }

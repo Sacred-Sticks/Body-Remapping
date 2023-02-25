@@ -176,6 +176,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Headset",
+            "id": "1e5a0f91-222b-460c-b0a2-51b97ed3cc72",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "49daee92-457f-48d1-8aa0-3a3b0593529e",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "450e5ed5-7994-4cb5-99da-fbce7d498e5c",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7d91fcd6-d14f-4e35-954c-08dac178548d",
+                    "path": "<XRHMD>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b51418d-8c15-4bcf-8a7d-8ddff69632e7",
+                    "path": "<XRHMD>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
