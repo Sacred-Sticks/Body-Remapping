@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Headset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Headset/HMDPosition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Headset/HMDPosition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Headset/HMDRotation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Headset/HMDRotation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Left Controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Left Controller/LeftControllerPosition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Left Controller/LeftControllerPosition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Left Controller/LeftControllerRotation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Left Controller/LeftControllerRotation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Right Controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Right Controller/RightControllerPosition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Right Controller/RightControllerPosition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Right Controller/RightControllerRotation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Right Controller/RightControllerRotation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/FBT Proportions.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/FBT Proportions.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Editor/BodyRemapperEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Editor/BodyRemapperEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Scriptable Objects/BodyMeasurements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Scriptable Objects/BodyMeasurements.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" afterDir="false" />
-    </list>
+    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +86,7 @@
       <updated>1677356101121</updated>
       <workItem from="1677356104277" duration="432000" />
       <workItem from="1677356593217" duration="1698000" />
-      <workItem from="1677358425359" duration="5271000" />
+      <workItem from="1677358425359" duration="6045000" />
     </task>
     <servers />
   </component>
