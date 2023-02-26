@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c3622b88be37f14e88b2c488267a319, type: 3}
   m_Name: User Proportions
   m_EditorClassIdentifier: 
-  leftArmLength: 1
-  rightArmLength: 1
-  shoulderWidth: 1
-  shoulderHeight: 1
-  waistHeight: 1
-  waistWidth: 1
-  leftLegLength: 1
-  rightLegLength: 1
-  height: 1
+  leftArmLength:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 408099df2515ca24eba41ea45dd96899, type: 2}
+  rightArmLength:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: d7e928e50d8daf74ab340782db534df7, type: 2}

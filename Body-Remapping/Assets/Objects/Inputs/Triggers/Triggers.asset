@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c3622b88be37f14e88b2c488267a319, type: 3}
-  m_Name: FBT Proportions
+  m_Script: {fileID: 11500000, guid: 0bc808c2b47e6264a92b287d9173e699, type: 3}
+  m_Name: Triggers
   m_EditorClassIdentifier: 
-  leftArmLength:
+  left:
     useConstant: 0
     constantValue: 0
-    variable: {fileID: 11400000, guid: 30db60251923fe048be290b521d7cf39, type: 2}
-  rightArmLength:
+    variable: {fileID: 11400000, guid: 6bf9c36122d481249a7bf742f0767be9, type: 2}
+  right:
     useConstant: 0
     constantValue: 0
-    variable: {fileID: 11400000, guid: 3a486c7bb839acc44a1c1388098caae4, type: 2}
+    variable: {fileID: 11400000, guid: 26d1986603eae9b47bd00fd48dbc6d78, type: 2}

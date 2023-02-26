@@ -1,40 +1,38 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 public class Remapper : MonoBehaviour
 {
 
     [SerializeField] private BodyMeasurements userMeasurements;
     [SerializeField] private BodyMeasurements avatarMeasurements;
     [Space]
-    [SerializeField] private Transform LeftController;
-    [SerializeField] private Transform RightController;
+    [SerializeField] private Transform leftController;
+    [SerializeField] private Transform rightController;
     [Space]
-    [SerializeField] private Transform LeftShoulder;
-    [SerializeField] private Transform RightShoulder;
+    [SerializeField] private Transform leftShoulder;
+    [SerializeField] private Transform rightShoulder;
     [Space]
-    [SerializeField] private Transform AvatarLeftShoulder;
-    [SerializeField] private Transform AvatarRightShoulder;
+    [SerializeField] private Transform avatarLeftShoulder;
+    [SerializeField] private Transform avatarRightShoulder;
     [Space]
-    [SerializeField] private Transform LeftControllerSimulator;
-    [SerializeField] private Transform RightControllerSimulator;
-
-    private float leftArmScale;
-    private float rightArmScale;
+    [SerializeField] private Transform leftControllerSimulator;
+    [SerializeField] private Transform rightControllerSimulator;
 
     private void Start()
     {
-        leftArmScale = Mathf.Sqrt(avatarMeasurements.leftArmLength) / Mathf.Sqrt(userMeasurements.leftArmLength);
-        rightArmScale = Mathf.Sqrt(avatarMeasurements.rightArmLength) / Mathf.Sqrt(userMeasurements.rightArmLength);
     }
 
     private void Update()
     {
-        LeftControllerSimulator.position = ScaleHand(LeftController, LeftShoulder, leftArmScale, AvatarLeftShoulder);
-        RightControllerSimulator.position = ScaleHand(RightController, RightShoulder, rightArmScale, AvatarRightShoulder);
-        LeftControllerSimulator.rotation = LeftController.rotation;
-        RightControllerSimulator.rotation = RightController.rotation;
+        float leftArmScale = avatarMeasurements.leftArmLength.Value / userMeasurements.leftArmLength.Value;
+        float rightArmScale = avatarMeasurements.rightArmLength.Value / userMeasurements.rightArmLength.Value;
+        leftControllerSimulator.position = ScaleHand(leftController, leftShoulder, leftArmScale, avatarLeftShoulder);
+        rightControllerSimulator.position = ScaleHand(rightController, rightShoulder, rightArmScale, avatarRightShoulder);
+        leftControllerSimulator.rotation = leftController.rotation;
+        rightControllerSimulator.rotation = rightController.rotation;
     }
 
-    private Vector3 ScaleHand(Transform controller, Transform playerShoulder, float scale, Transform avatarShoulder)
+    private static Vector3 ScaleHand(Transform controller, Transform playerShoulder, float scale, Transform avatarShoulder)
     {
         var direction = (controller.position - playerShoulder.position).normalized;
         float defaultLength = Vector3.Distance(playerShoulder.position, controller.position);

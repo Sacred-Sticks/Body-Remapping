@@ -15,10 +15,28 @@ MonoBehaviour:
   inputActionsData:
   - binding: <XRHMD>/devicePosition
     actionType: 0
-    variable: {fileID: 11400000, guid: ab090394203eacc4a8bc702d50a45397, type: 2}
+    variable: {fileID: 11400000, guid: 8215da0990303cf4793b256ad193db65, type: 2}
   - binding: <XRHMD>/deviceRotation
     actionType: 0
     variable: {fileID: 11400000, guid: ab090394203eacc4a8bc702d50a45397, type: 2}
+  - binding: <XRController>{LeftHand}/devicePosition
+    actionType: 0
+    variable: {fileID: 11400000, guid: 9d6cdf135e760d24b9a45513f3d1809b, type: 2}
+  - binding: <XRController>{LeftHand}/deviceRotation
+    actionType: 0
+    variable: {fileID: 11400000, guid: a23297b3ee994c247af62ff87451f35c, type: 2}
+  - binding: <XRController>{RightHand}/devicePosition
+    actionType: 0
+    variable: {fileID: 11400000, guid: 7a38ad73066222f438a7f278eb74e6ab, type: 2}
+  - binding: <XRController>{RightHand}/deviceRotation
+    actionType: 0
+    variable: {fileID: 11400000, guid: dd254144f1d2178478e93057346b37bf, type: 2}
+  - binding: <Keyboard>/a
+    actionType: 0
+    variable: {fileID: 11400000, guid: 6bf9c36122d481249a7bf742f0767be9, type: 2}
+  - binding: <Keyboard>/d
+    actionType: 0
+    variable: {fileID: 11400000, guid: 26d1986603eae9b47bd00fd48dbc6d78, type: 2}
   inputActions:
   - m_Name: 
     m_Type: 0
@@ -29,7 +47,119 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 
-      m_Path: <XRHMD>/centerEyePosition
+      m_Path: <XRHMD>/devicePosition
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRHMD>/deviceRotation
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{LeftHand}/devicePosition
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{LeftHand}/deviceRotation
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{RightHand}/devicePosition
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{RightHand}/deviceRotation
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 

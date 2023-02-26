@@ -1,3 +1,4 @@
+using Remapping;
 using UnityEditor;
 using UnityEngine;
 [CustomEditor(typeof(AvatarMapper))]
