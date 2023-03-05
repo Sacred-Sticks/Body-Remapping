@@ -12,15 +12,11 @@ public class Remapper : MonoBehaviour
     [SerializeField] private Transform leftShoulder;
     [SerializeField] private Transform rightShoulder;
     [Space]
-    [SerializeField] private Transform avatarLeftShoulder;
-    [SerializeField] private Transform avatarRightShoulder;
-    [Space]
     [SerializeField] private Transform leftControllerSimulator;
     [SerializeField] private Transform rightControllerSimulator;
-
-    private void Start()
-    {
-    }
+    [Space]
+    [SerializeField] private Transform avatarLeftShoulder;
+    [SerializeField] private Transform avatarRightShoulder;
 
     private void Update()
     {
