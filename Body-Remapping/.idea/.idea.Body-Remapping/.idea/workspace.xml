@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="" />
+    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +17,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Editor/References/QuaternionReferenceEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/References/QuaternionReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,6 +94,7 @@
       <workItem from="1677356104277" duration="432000" />
       <workItem from="1677356593217" duration="1698000" />
       <workItem from="1677358425359" duration="6045000" />
+      <workItem from="1678077443597" duration="4081000" />
     </task>
     <servers />
   </component>

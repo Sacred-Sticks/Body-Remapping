@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 public class Remapper : MonoBehaviour
@@ -17,6 +18,21 @@ public class Remapper : MonoBehaviour
     [Space]
     [SerializeField] private Transform avatarLeftShoulder;
     [SerializeField] private Transform avatarRightShoulder;
+    [Space]
+    [SerializeField] private EventLinkObject eventReceiver;
+
+    private void Start()
+    {
+        eventReceiver.ChainLinkEvent += OnChainLinkEventCalled;
+    }
+
+    private void OnChainLinkEventCalled(object sender, ChainEventArgs e)
+    {
+        if (e is not AvatarEventArgs eventArgs)
+            return;
+        avatarLeftShoulder = eventArgs.LeftShoulder;
+        avatarRightShoulder = eventArgs.RightShoulder;
+    }
 
     private void Update()
     {
