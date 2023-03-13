@@ -37,6 +37,9 @@ MonoBehaviour:
   - binding: <Keyboard>/d
     actionType: 0
     variable: {fileID: 11400000, guid: 26d1986603eae9b47bd00fd48dbc6d78, type: 2}
+  - binding: <Keyboard>/e
+    actionType: 0
+    variable: {fileID: 11400000, guid: d6c501d96270fde43a50ff7d46b5c6d1, type: 2}
   inputActions:
   - m_Name: 
     m_Type: 0
@@ -160,6 +163,22 @@ MonoBehaviour:
     - m_Name: 
       m_Id: 
       m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/e
       m_Interactions: 
       m_Processors: 
       m_Groups: 
