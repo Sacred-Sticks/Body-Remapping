@@ -9,6 +9,8 @@ namespace Remapping
         [SerializeField] private FloatReference armLength;
         [SerializeField] private Transform shoulderTransform;
         [SerializeField] private Transform hipTransform;
+
+        private Vector3 handPosition;
         
         private enum MappingStatus
         {
@@ -50,17 +52,22 @@ namespace Remapping
                     break;
                 case MappingStatus.AllJointsPlaced:
                     armLength.Value = Vector3.Distance(transform.position, shoulderTransform.position);
-                    Debug.Log($"Length set to {armLength.Value}");
+                    handPosition = transform.position;
                     enabled = false;
-                    break;
-                default:
                     break;
             }
         }
         private void SetPlacement(Transform objectTransform)
         {
             objectTransform.position = transform.position;
-            Debug.Log($"Set point at {transform.position}");
+        }
+        
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(shoulderTransform.position, 0.01f);
+            Gizmos.DrawSphere(hipTransform.position, 0.01f);
+            Gizmos.DrawSphere(handPosition, 0.01f);
         }
     }
 }
