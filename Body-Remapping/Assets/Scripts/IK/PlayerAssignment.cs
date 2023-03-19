@@ -16,7 +16,7 @@ public class PlayerAssignment : MonoBehaviour
 
     private void Update()
     {
-        SetPosition(headset, hmdPosition.Value);
+        SetPosition(headset, hmdPosition.Value + transform.position);
         SetPosition(leftController, leftControllerPosition.Value);
         SetPosition(rightController, rightControllerPosition.Value);
         
@@ -27,7 +27,8 @@ public class PlayerAssignment : MonoBehaviour
 
     private void SetPosition(Transform objectTransform, Vector3 objectPosition)
     {
-        objectTransform.position = objectPosition.x * character.right + objectPosition.y * character.up + objectPosition.z * character.forward;
+        var position = objectPosition.x * character.right + objectPosition.y * character.up + objectPosition.z * character.forward;
+        objectTransform.position = position;
     }
 
     private void SetRotation(Transform objectTransform, Quaternion objectRotation)

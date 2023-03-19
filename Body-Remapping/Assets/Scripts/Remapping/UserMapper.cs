@@ -9,6 +9,7 @@ namespace Remapping
         [SerializeField] private FloatReference armLength;
         [SerializeField] private Transform shoulderTransform;
         [SerializeField] private Transform hipTransform;
+        [SerializeField] private Transform hmdTransform;
 
         private Vector3 handPosition;
         
@@ -59,7 +60,8 @@ namespace Remapping
         }
         private void SetPlacement(Transform objectTransform)
         {
-            objectTransform.position = transform.position;
+            var position = new Vector3(transform.position.x, transform.position.y, hmdTransform.position.z);
+            objectTransform.position = position;
         }
         
         private void OnDrawGizmos()

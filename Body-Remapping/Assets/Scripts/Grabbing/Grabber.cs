@@ -59,8 +59,8 @@ namespace Grabbing
                 return;
             isGrabbing = true;
             // Input is pressed, the grabber is within the radius of a grabbable object
-            localJoint = body.AddComponent<FixedJoint>();
-            grabbingJoint = grabbableBody.AddComponent<FixedJoint>();
+            localJoint = gameObject.AddComponent<FixedJoint>();
+            grabbingJoint = grabbableBody.gameObject.AddComponent<FixedJoint>();
             localJoint.connectedBody = grabbableBody;
             grabbingJoint.connectedBody = body;
         }

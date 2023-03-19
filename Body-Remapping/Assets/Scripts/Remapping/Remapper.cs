@@ -21,7 +21,7 @@ public class Remapper : MonoBehaviour
     [Space]
     [SerializeField] private EventLinkObject eventReceiver;
 
-    private void Start()
+    private void Awake()
     {
         eventReceiver.ChainLinkEvent += OnChainLinkEventCalled;
     }
