@@ -10,8 +10,6 @@ namespace Remapping
         [SerializeField] private Transform shoulderTransform;
         [SerializeField] private Transform hipTransform;
         [SerializeField] private Transform hmdTransform;
-
-        private Vector3 handPosition;
         
         private enum MappingStatus
         {
@@ -53,7 +51,6 @@ namespace Remapping
                     break;
                 case MappingStatus.AllJointsPlaced:
                     armLength.Value = Vector3.Distance(transform.position, shoulderTransform.position);
-                    handPosition = transform.position;
                     enabled = false;
                     break;
             }
@@ -62,14 +59,6 @@ namespace Remapping
         {
             var position = new Vector3(transform.position.x, transform.position.y, hmdTransform.position.z);
             objectTransform.position = position;
-        }
-        
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(shoulderTransform.position, 0.01f);
-            Gizmos.DrawSphere(hipTransform.position, 0.01f);
-            Gizmos.DrawSphere(handPosition, 0.01f);
         }
     }
 }

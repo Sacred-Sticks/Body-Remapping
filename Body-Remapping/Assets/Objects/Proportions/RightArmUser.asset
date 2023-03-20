@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed42aa53123c0f4589e2d8d63eeb6c4, type: 3}
   m_Name: RightArmUser
   m_EditorClassIdentifier: 
-  value: 0.93033427
-  resetValue: 0
-  initialValue: 0
+  value: 0.5556078
+  resetValue: 1
+  initialValue: 0.5556078
