@@ -719,7 +719,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.125
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -1501,7 +1501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461225930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.041, z: 0.526}
+  m_LocalPosition: {x: 0, y: 1.041, z: 0.358}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2462,12 +2462,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5953425775897666337, guid: 2e23c58184915614ba4ef5270a75ebec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953425775897666337, guid: 2e23c58184915614ba4ef5270a75ebec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.591
+      value: 1.603
       objectReference: {fileID: 0}
     - target: {fileID: 5953425775897666337, guid: 2e23c58184915614ba4ef5270a75ebec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.123
+      value: 0.104
       objectReference: {fileID: 0}
     - target: {fileID: 5953425776496687448, guid: 2e23c58184915614ba4ef5270a75ebec, type: 3}
       propertyPath: m_Name
@@ -2621,9 +2625,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8909619878798786601, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+      propertyPath: radius.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: d9649f5b8cfa0a742bc088fb41a69822, type: 2}
+    - target: {fileID: 8909619878798786601, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+      propertyPath: radius.useConstant
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909619879841903959, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+      propertyPath: radius.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: d9649f5b8cfa0a742bc088fb41a69822, type: 2}
+    - target: {fileID: 8909619879841903959, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+      propertyPath: radius.useConstant
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9105033383571285055, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
       propertyPath: m_Name
       value: Player-Simulator
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8909619878798786602, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+    - {fileID: 8909619878798786600, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+    - {fileID: 8909619879841903958, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
+    - {fileID: 8909619879841903960, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f2eda7939de42f7449dc090b910b8ada, type: 3}

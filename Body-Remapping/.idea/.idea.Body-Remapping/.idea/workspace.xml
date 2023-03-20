@@ -4,11 +4,8 @@
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmUser.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmUser.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmUser.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmUser.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +80,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12672">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12672" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -114,6 +111,7 @@
       <workItem from="1679082131704" duration="2798000" />
       <workItem from="1679213515835" duration="4000" />
       <workItem from="1679266880698" duration="2460000" />
+      <workItem from="1679326341982" duration="2853000" />
     </task>
     <servers />
   </component>
@@ -130,42 +128,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs</url>
-          <line>59</line>
-          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\Grabbing\Grabber.cs" initialLine="59" containingFunctionPresentation="method 'GrabObject'">
+          <line>70</line>
+          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\Grabbing\Grabber.cs" initialLine="75" containingFunctionPresentation="method 'SearchForGrabbable'">
             <startOffsets>
-              <option value="1523" />
+              <option value="2054" />
             </startOffsets>
             <endOffsets>
-              <option value="1541" />
+              <option value="2121" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/GenericVariable.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Packages\ReferenceVariables\Scripts\Variables\GenericVariable.cs" initialLine="25" containingFunctionPresentation="property 'Value'">
-            <startOffsets>
-              <option value="671" />
-            </startOffsets>
-            <endOffsets>
-              <option value="715" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\Remapping\Remapper.cs" initialLine="41" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="1565" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1679" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
