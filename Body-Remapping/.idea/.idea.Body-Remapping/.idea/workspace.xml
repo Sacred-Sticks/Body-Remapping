@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" afterDir="false" />
-    </list>
+    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +106,7 @@
       <workItem from="1679082131704" duration="2798000" />
       <workItem from="1679213515835" duration="4000" />
       <workItem from="1679266880698" duration="2460000" />
-      <workItem from="1679326341982" duration="2853000" />
+      <workItem from="1679326341982" duration="3015000" />
     </task>
     <servers />
   </component>
