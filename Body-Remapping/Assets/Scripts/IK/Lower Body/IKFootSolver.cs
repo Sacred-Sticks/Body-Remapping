@@ -1,9 +1,4 @@
-using System;
-using ReferenceVariables;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class IKFootSolver : MonoBehaviour
 {
@@ -51,8 +46,8 @@ public class IKFootSolver : MonoBehaviour
             if (Vector3.SqrMagnitude(nextPosition - hit.point) > Mathf.Pow(steppingDistance, 2) && !otherFoot.IsMoving && !IsMoving)
             {
                 lerpPercentage = 0;
-                var direction = (target.InverseTransformPoint(hit.point) - target.InverseTransformPoint(nextPosition)).normalized;
-                nextPosition = hit.point + (direction * stepLength);
+                int direction = (target.InverseTransformPoint(hit.point) - target.InverseTransformPoint(nextPosition)).z > 0 ? 1 : -1;
+                nextPosition = hit.point + (transform.forward * (direction * stepLength));
                 nextNormal = hit.normal;
             }
         }
