@@ -1,15 +1,15 @@
 using System;
-using InputManagement;
 using ReferenceVariables;
 using UnityEngine;
 namespace Remapping
 {
     public class UserMapper : MonoBehaviour
     {
-        [SerializeField] private FloatReference userInput;
+        [SerializeField] private FloatVariable userInput;
         [SerializeField] private FloatReference armLength;
         [SerializeField] private Transform shoulderTransform;
         [SerializeField] private Transform hipTransform;
+        [SerializeField] private Transform hmdTransform;
         
         private enum MappingStatus
         {
@@ -19,18 +19,22 @@ namespace Remapping
         }
 
         private MappingStatus activeStatus = MappingStatus.NonePlaced;
-        private bool inputting = false;
-        
-        private void Update()
+
+        private void Awake()
         {
-            if (userInput.Value == 0)
+            userInput.ValueChanged += OnUserInputValueChanged;
+        }
+        private void OnUserInputValueChanged(object sender, EventArgs e)
+        {
+            switch (userInput.Value)
             {
-                inputting = false;
-                return;
+                case 0:
+                    break;
+                case 1:
+                    StatusStateMachine();
+                    break;
+                default: throw new ArgumentOutOfRangeException(nameof(userInput));
             }
-            if (inputting) return;
-            inputting = true;
-            StatusStateMachine();
         }
 
         private void StatusStateMachine()
@@ -49,13 +53,12 @@ namespace Remapping
                     armLength.Value = Vector3.Distance(transform.position, shoulderTransform.position);
                     enabled = false;
                     break;
-                default:
-                    break;
             }
         }
         private void SetPlacement(Transform objectTransform)
         {
-            objectTransform.position = transform.position;
+            var position = new Vector3(transform.position.x, transform.position.y, hmdTransform.position.z);
+            objectTransform.position = position;
         }
     }
 }

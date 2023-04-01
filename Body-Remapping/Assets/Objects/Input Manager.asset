@@ -31,12 +31,27 @@ MonoBehaviour:
   - binding: <XRController>{RightHand}/deviceRotation
     actionType: 0
     variable: {fileID: 11400000, guid: dd254144f1d2178478e93057346b37bf, type: 2}
-  - binding: <Keyboard>/a
+  - binding: <XRController>{LeftHand}/triggerPressed
     actionType: 0
     variable: {fileID: 11400000, guid: 6bf9c36122d481249a7bf742f0767be9, type: 2}
-  - binding: <Keyboard>/d
+  - binding: <XRController>{RightHand}/triggerPressed
     actionType: 0
     variable: {fileID: 11400000, guid: 26d1986603eae9b47bd00fd48dbc6d78, type: 2}
+  - binding: <XRController>{LeftHand}/gripPressed
+    actionType: 0
+    variable: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
+  - binding: <XRController>{RightHand}/gripPressed
+    actionType: 0
+    variable: {fileID: 11400000, guid: d6c501d96270fde43a50ff7d46b5c6d1, type: 2}
+  - binding: <XRController>{LeftHand}/joystick
+    actionType: 0
+    variable: {fileID: 11400000, guid: 7907ff9c40fd42245b1583e9fdc70ee3, type: 2}
+  - binding: <Keyboard>/a
+    actionType: 0
+    variable: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
+  - binding: <Keyboard>/d
+    actionType: 0
+    variable: {fileID: 11400000, guid: d6c501d96270fde43a50ff7d46b5c6d1, type: 2}
   inputActions:
   - m_Name: 
     m_Type: 0
@@ -128,6 +143,86 @@ MonoBehaviour:
     - m_Name: 
       m_Id: 
       m_Path: <XRController>{RightHand}/deviceRotation
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{LeftHand}/triggerPressed
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{RightHand}/triggerPressed
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{LeftHand}/gripPressed
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{RightHand}/gripPressed
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <XRController>{LeftHand}/joystick
       m_Interactions: 
       m_Processors: 
       m_Groups: 

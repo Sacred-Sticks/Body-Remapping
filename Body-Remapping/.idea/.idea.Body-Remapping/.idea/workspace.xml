@@ -3,8 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/FBT Proportions.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/FBT Proportions.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmFBT.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmFBT.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmUser.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmUser.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmFBT.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmFBT.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmUser.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmUser.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User Proportions.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User Proportions.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player-Simulator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player-Simulator.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Head.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Head.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/IKFootSolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/IKFootSolver.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
     </list>
@@ -14,10 +30,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/42/1afdf80d/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/c0/dc677457/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/db/823a41c5/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Editor/References/QuaternionReferenceEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/References/QuaternionReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugging/TransformGizmo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.1.1/Runtime/AnimationRig/Constraints/MultiPositionConstraint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/InputManagerStateMonitors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Utilities/ComponentHolderProtocol.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../SP23-488-Project/Blacksite Theta/Assets/Scripts/Abilities/Arm Type/Electric.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../SP23-488-Project/Blacksite Theta/Assets/Scripts/Save/DataPersistenceManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,10 +100,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28332">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="28332" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -95,6 +123,20 @@
       <workItem from="1677356593217" duration="1698000" />
       <workItem from="1677358425359" duration="6045000" />
       <workItem from="1678077443597" duration="4081000" />
+      <workItem from="1678721874527" duration="6632000" />
+      <workItem from="1678728846615" duration="859000" />
+      <workItem from="1678731593348" duration="564000" />
+      <workItem from="1679025464254" duration="238000" />
+      <workItem from="1679035753480" duration="2482000" />
+      <workItem from="1679082131704" duration="2798000" />
+      <workItem from="1679213515835" duration="4000" />
+      <workItem from="1679266880698" duration="2460000" />
+      <workItem from="1679326341982" duration="3015000" />
+      <workItem from="1680057277139" duration="1160000" />
+      <workItem from="1680249040832" duration="2425000" />
+      <workItem from="1680282335973" duration="8782000" />
+      <workItem from="1680316028195" duration="8616000" />
+      <workItem from="1680371964820" duration="1097000" />
     </task>
     <servers />
   </component>
@@ -105,5 +147,37 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs</url>
+          <line>70</line>
+          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\Grabbing\Grabber.cs" initialLine="75" containingFunctionPresentation="method 'SearchForGrabbable'">
+            <startOffsets>
+              <option value="2054" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2121" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\IK\Lower Body\IKFootSolver.cs" initialLine="40" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="1609" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1688" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

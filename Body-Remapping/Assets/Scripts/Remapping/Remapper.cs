@@ -1,11 +1,12 @@
 using System;
+using InputManagement;
 using UnityEngine;
 using UnityEngine.Serialization;
 public class Remapper : MonoBehaviour
 {
 
-    [SerializeField] private BodyMeasurements userMeasurements;
-    [SerializeField] private BodyMeasurements avatarMeasurements;
+    [SerializeField] private DirectionalFloat userMeasurements;
+    [SerializeField] private DirectionalFloat avatarMeasurements;
     [Space]
     [SerializeField] private Transform leftController;
     [SerializeField] private Transform rightController;
@@ -21,7 +22,7 @@ public class Remapper : MonoBehaviour
     [Space]
     [SerializeField] private EventLinkObject eventReceiver;
 
-    private void Start()
+    private void Awake()
     {
         eventReceiver.ChainLinkEvent += OnChainLinkEventCalled;
     }
@@ -36,8 +37,8 @@ public class Remapper : MonoBehaviour
 
     private void Update()
     {
-        float leftArmScale = avatarMeasurements.leftArmLength.Value / userMeasurements.leftArmLength.Value;
-        float rightArmScale = avatarMeasurements.rightArmLength.Value / userMeasurements.rightArmLength.Value;
+        float leftArmScale = avatarMeasurements.Left.Value / userMeasurements.Left.Value;
+        float rightArmScale = avatarMeasurements.Right.Value / userMeasurements.Right.Value;
         leftControllerSimulator.position = ScaleHand(leftController, leftShoulder, leftArmScale, avatarLeftShoulder);
         rightControllerSimulator.position = ScaleHand(rightController, rightShoulder, rightArmScale, avatarRightShoulder);
         leftControllerSimulator.rotation = leftController.rotation;
