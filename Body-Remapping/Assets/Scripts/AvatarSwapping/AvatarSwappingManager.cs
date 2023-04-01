@@ -1,18 +1,56 @@
+using System;
+using System.Collections.Generic;
 using Remapping;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AvatarSwappingManager : MonoBehaviour
 {
-    [SerializeField] private EventLinkObject eventTarget;
-    
-    public void LoadAvatar(AvatarMapper.JointLocations mapping)
+    [Header("Received Events")]
+    [SerializeField] private EventBus takeAvatarData;
+    [SerializeField] private EventBus avatarSwapped;
+    [Space]
+    [Header("Sending Events")]
+    [SerializeField] private EventBus changeMapping;
+
+    private readonly List<AvatarJointEventArgs> avatarsData = new List<AvatarJointEventArgs>();
+    private readonly List<GameObject> avatarRoots = new List<GameObject>();
+
+    private int index;
+
+    private void Awake()
     {
-        var e = new AvatarEventArgs(mapping.leftShoulder, mapping.rightShoulder);
-        eventTarget.CallEvent(this, e);
+        takeAvatarData.Event += OnTakeAvatarDataEvent;
+        avatarSwapped.Event += SendAvatarData;
+    }
+
+    private void Start()
+    {
+        foreach (var avatar in avatarRoots)
+        {
+            avatar.SetActive(false);
+        }
+    }
+
+    private void OnTakeAvatarDataEvent(object sender, EventArgs e)
+    {
+        if (e is not AvatarJointEventArgs args)
+            return;
+        avatarsData.Add(args);
+        if (sender is Component component)
+            avatarRoots.Add(component.gameObject);
+    }
+
+    public void SendAvatarData(object sender, EventArgs e)
+    {
+        changeMapping.Trigger(this, avatarsData[index]);
+        index++;
+        if (index >= avatarsData.Count)
+            index = 0;
     }
 }
 
-public class AvatarEventArgs : ChainEventArgs
+public class AvatarJointEventArgs : EventArgs
 {
     public Transform LeftShoulder
     {
@@ -25,7 +63,7 @@ public class AvatarEventArgs : ChainEventArgs
         set;
     }
 
-    public AvatarEventArgs(Transform leftShoulder, Transform rightShoulder)
+    public AvatarJointEventArgs(Transform leftShoulder, Transform rightShoulder)
     {
         LeftShoulder = leftShoulder;
         RightShoulder = rightShoulder;

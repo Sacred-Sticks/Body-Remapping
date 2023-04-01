@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FBT Man Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FBT Man Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inputs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inputs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/EventChain/EventLinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EventChain/EventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/EventChain/EventLinkObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EventChain/EventBus.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwap.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwap.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/References/QuaternionReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugging/TransformGizmo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.1.1/Runtime/AnimationRig/Constraints/MultiPositionConstraint.cs" root0="SKIP_HIGHLIGHTING" />
@@ -43,23 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Ackma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Ackma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Ackma\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Ackma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Ackma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Ackma\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
@@ -152,17 +155,17 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\IK\Lower Body\IKFootSolver.cs" initialLine="40" containingFunctionPresentation="method 'Update'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\AvatarSwapping\AvatarSwappingManager.cs" initialLine="30" containingFunctionPresentation="method 'OnTakeAvatarDataEvent'">
             <startOffsets>
-              <option value="1609" />
+              <option value="846" />
             </startOffsets>
             <endOffsets>
-              <option value="1688" />
+              <option value="868" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

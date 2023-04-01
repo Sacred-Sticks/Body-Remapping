@@ -2,6 +2,7 @@ using System;
 using InputManagement;
 using UnityEngine;
 using UnityEngine.Serialization;
+
 public class Remapper : MonoBehaviour
 {
 
@@ -20,19 +21,19 @@ public class Remapper : MonoBehaviour
     [SerializeField] private Transform avatarLeftShoulder;
     [SerializeField] private Transform avatarRightShoulder;
     [Space]
-    [SerializeField] private EventLinkObject eventReceiver;
+    [SerializeField] private EventBus remapAvatar;
 
     private void Awake()
     {
-        eventReceiver.ChainLinkEvent += OnChainLinkEventCalled;
+        remapAvatar.Event += OnEventCalled;
     }
 
-    private void OnChainLinkEventCalled(object sender, ChainEventArgs e)
+    private void OnEventCalled(object sender, EventArgs e)
     {
-        if (e is not AvatarEventArgs eventArgs)
+        if (e is not AvatarJointEventArgs args)
             return;
-        avatarLeftShoulder = eventArgs.LeftShoulder;
-        avatarRightShoulder = eventArgs.RightShoulder;
+        avatarLeftShoulder = args.LeftShoulder;
+        avatarRightShoulder = args.RightShoulder;
     }
 
     private void Update()

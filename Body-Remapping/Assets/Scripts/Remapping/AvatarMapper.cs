@@ -16,15 +16,22 @@ namespace Remapping
             public Transform rightHip;
         }
         
-        [SerializeField] private AvatarSwappingManager swappingManager;
+        [SerializeField] private EventBus sendAvatarData;
         
         [SerializeField] private DirectionalFloat avatarMeasurements;
 
         [SerializeField] private JointLocations avatarJoints;
 
-        private void OnEnable()
+        private void Awake()
         {
-            swappingManager.LoadAvatar(avatarJoints);
+            var args = new AvatarJointEventArgs(avatarJoints.leftShoulder, avatarJoints.rightShoulder);
+            sendAvatarData.Trigger(this, args);
+        }
+
+        private void Start()
+        {
+            var args = new AvatarJointEventArgs(avatarJoints.leftShoulder, avatarJoints.rightShoulder);
+            sendAvatarData.Trigger(this, args);
         }
 
         public void MeasureAvatar()
@@ -38,7 +45,5 @@ namespace Remapping
             avatarMeasurements.Left.Value = (leftShoulder - leftHand).magnitude;
             avatarMeasurements.Right.Value = (rightShoulder - rightHand).magnitude;
         }
-
-
     }
 }
