@@ -1123,7 +1123,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221758952}
-  - component: {fileID: 1221758953}
   - component: {fileID: 1221758954}
   m_Layer: 0
   m_Name: Characters
@@ -1148,21 +1147,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1221758953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221758951}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f933d586910fae34cbe756f17e4203a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1794200237}
-  headBodyPositionOffset: {x: 0, y: -1.69, z: 0}
-  headBodyRotationOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &1221758954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1503,7 +1487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1461225931
 Rigidbody:
   m_ObjectHideFlags: 0
