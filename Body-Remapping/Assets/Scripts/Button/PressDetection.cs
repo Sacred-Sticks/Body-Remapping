@@ -11,16 +11,6 @@ public class PressDetection : MonoBehaviour
     private Vector3 initialPosition;
     private bool isActivated;
 
-    private void Awake()
-    {
-        buttonPressed.Event += OnButtonPressedEvent;
-    }
-
-    private void OnButtonPressedEvent(object sender, EventArgs e)
-    {
-        Debug.Log("Button Pressed");
-    }
-
     private void Start()
     {
         initialPosition = transform.position;

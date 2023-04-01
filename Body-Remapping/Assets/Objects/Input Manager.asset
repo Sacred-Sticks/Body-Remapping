@@ -46,12 +46,6 @@ MonoBehaviour:
   - binding: <XRController>{LeftHand}/joystick
     actionType: 0
     variable: {fileID: 11400000, guid: 7907ff9c40fd42245b1583e9fdc70ee3, type: 2}
-  - binding: <Keyboard>/a
-    actionType: 0
-    variable: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
-  - binding: <Keyboard>/d
-    actionType: 0
-    variable: {fileID: 11400000, guid: d6c501d96270fde43a50ff7d46b5c6d1, type: 2}
   inputActions:
   - m_Name: 
     m_Type: 0
@@ -223,38 +217,6 @@ MonoBehaviour:
     - m_Name: 
       m_Id: 
       m_Path: <XRController>{LeftHand}/joystick
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: 
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: 
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 
-      m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 

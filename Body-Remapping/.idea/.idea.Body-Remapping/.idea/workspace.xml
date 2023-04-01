@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/EventChain/EventLinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EventChain/EventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/EventChain/EventLinkObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EventChain/EventBus.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwap.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwap.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Events/Avatar Loader.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Events/Avatar Loader.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Events/Avatar Swapping Button.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Events/Avatar Swapping Button.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Events/Remap Avatar.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Events/Remap Avatar.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,17 +157,17 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\AvatarSwapping\AvatarSwappingManager.cs" initialLine="30" containingFunctionPresentation="method 'OnTakeAvatarDataEvent'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\Remapping\UserMapper.cs" initialLine="54" containingFunctionPresentation="method 'StatusStateMachine'">
             <startOffsets>
-              <option value="846" />
+              <option value="1805" />
             </startOffsets>
             <endOffsets>
-              <option value="868" />
+              <option value="1888" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

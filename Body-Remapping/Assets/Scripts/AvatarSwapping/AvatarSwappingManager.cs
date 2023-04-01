@@ -16,12 +16,12 @@ public class AvatarSwappingManager : MonoBehaviour
     private readonly List<AvatarJointEventArgs> avatarsData = new List<AvatarJointEventArgs>();
     private readonly List<GameObject> avatarRoots = new List<GameObject>();
 
-    private int index;
+    private int activeAvatarIndex;
 
     private void Awake()
     {
         takeAvatarData.Event += OnTakeAvatarDataEvent;
-        avatarSwapped.Event += SendAvatarData;
+        avatarSwapped.Event += LoadAvatar;
     }
 
     private void Start()
@@ -41,12 +41,14 @@ public class AvatarSwappingManager : MonoBehaviour
             avatarRoots.Add(component.gameObject);
     }
 
-    public void SendAvatarData(object sender, EventArgs e)
+    public void LoadAvatar(object sender, EventArgs e)
     {
-        changeMapping.Trigger(this, avatarsData[index]);
-        index++;
-        if (index >= avatarsData.Count)
-            index = 0;
+        avatarRoots[activeAvatarIndex].SetActive(false);
+        activeAvatarIndex++;
+        if (activeAvatarIndex >= avatarsData.Count)
+            activeAvatarIndex = 0;
+        avatarRoots[activeAvatarIndex].SetActive(true);
+        changeMapping.Trigger(this, avatarsData[activeAvatarIndex]);
     }
 }
 

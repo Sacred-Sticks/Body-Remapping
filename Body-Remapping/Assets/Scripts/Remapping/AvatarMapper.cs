@@ -22,12 +22,6 @@ namespace Remapping
 
         [SerializeField] private JointLocations avatarJoints;
 
-        private void Awake()
-        {
-            var args = new AvatarJointEventArgs(avatarJoints.leftShoulder, avatarJoints.rightShoulder);
-            sendAvatarData.Trigger(this, args);
-        }
-
         private void Start()
         {
             var args = new AvatarJointEventArgs(avatarJoints.leftShoulder, avatarJoints.rightShoulder);

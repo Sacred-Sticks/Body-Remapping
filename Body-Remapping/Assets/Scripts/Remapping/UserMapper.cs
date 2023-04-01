@@ -5,26 +5,28 @@ namespace Remapping
 {
     public class UserMapper : MonoBehaviour
     {
+        [SerializeField] private UserMapper otherMapper;
+        [SerializeField] private EventBus loadAvatar;
         [SerializeField] private FloatVariable userInput;
         [SerializeField] private FloatReference armLength;
         [SerializeField] private Transform shoulderTransform;
         [SerializeField] private Transform hipTransform;
         [SerializeField] private Transform hmdTransform;
         
-        private enum MappingStatus
+        public enum MappingStatus
         {
             NonePlaced,
             ShoulderPlaced,
             AllJointsPlaced,
         }
 
-        private MappingStatus activeStatus = MappingStatus.NonePlaced;
+        public MappingStatus ActiveStatus { get; private set; } = MappingStatus.NonePlaced;
 
         private void Awake()
         {
-            userInput.ValueChanged += OnUserInputValueChanged;
+            userInput.ValueChanged += OnActivation;
         }
-        private void OnUserInputValueChanged(object sender, EventArgs e)
+        private void OnActivation(object sender, EventArgs e)
         {
             switch (userInput.Value)
             {
@@ -39,20 +41,24 @@ namespace Remapping
 
         private void StatusStateMachine()
         {
-            switch (activeStatus)
+            switch (ActiveStatus)
             {
                 case MappingStatus.NonePlaced:
                     SetPlacement(shoulderTransform);
-                    activeStatus = MappingStatus.ShoulderPlaced;
+                    ActiveStatus = MappingStatus.ShoulderPlaced;
                     break;
                 case MappingStatus.ShoulderPlaced:
                     SetPlacement(hipTransform);
-                    activeStatus = MappingStatus.AllJointsPlaced;
+                    ActiveStatus = MappingStatus.AllJointsPlaced;
                     break;
                 case MappingStatus.AllJointsPlaced:
                     armLength.Value = Vector3.Distance(transform.position, shoulderTransform.position);
-                    enabled = false;
+                    if (!otherMapper)
+                        loadAvatar.Trigger(this, EventArgs.Empty);
+                    Destroy(this);
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
         }
         private void SetPlacement(Transform objectTransform)
