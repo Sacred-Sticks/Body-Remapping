@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="" />
+    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/FBT Proportions.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/FBT Proportions.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmFBT.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmFBT.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmUser.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/LeftArmUser.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmFBT.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmFBT.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmUser.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/RightArmUser.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User Proportions.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User Proportions.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player-Simulator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player-Simulator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Head.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Head.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/IKFootSolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/IKFootSolver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,12 +31,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/42/1afdf80d/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/c0/dc677457/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/db/823a41c5/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Editor/References/QuaternionReferenceEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/References/QuaternionReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugging/TransformGizmo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.1.1/Runtime/AnimationRig/Constraints/MultiPositionConstraint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/InputManagerStateMonitors.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
@@ -75,10 +100,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12672">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28332">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12672" />
+      <option name="pid" value="28332" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -107,6 +132,11 @@
       <workItem from="1679213515835" duration="4000" />
       <workItem from="1679266880698" duration="2460000" />
       <workItem from="1679326341982" duration="3015000" />
+      <workItem from="1680057277139" duration="1160000" />
+      <workItem from="1680249040832" duration="2425000" />
+      <workItem from="1680282335973" duration="8782000" />
+      <workItem from="1680316028195" duration="8616000" />
+      <workItem from="1680371964820" duration="1097000" />
     </task>
     <servers />
   </component>
@@ -133,6 +163,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\IK\Lower Body\IKFootSolver.cs" initialLine="40" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="1609" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1688" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

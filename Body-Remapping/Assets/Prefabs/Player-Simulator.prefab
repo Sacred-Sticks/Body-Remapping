@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8909619878798786599}
   - component: {fileID: 8909619878798786602}
   - component: {fileID: 8909619878798786601}
-  - component: {fileID: 8909619878798786600}
   m_Layer: 0
   m_Name: Left Controller Simulator
   m_TagString: Untagged
@@ -63,19 +62,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabbingInput: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
---- !u!135 &8909619878798786600
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909619878798786598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0.1, z: 0}
+  radius:
+    useConstant: 1
+    constantValue: 0
+    variable: {fileID: 0}
 --- !u!1 &8909619879841903956
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +77,6 @@ GameObject:
   - component: {fileID: 8909619879841903957}
   - component: {fileID: 8909619879841903960}
   - component: {fileID: 8909619879841903959}
-  - component: {fileID: 8909619879841903958}
   m_Layer: 0
   m_Name: Right Controller Simulator
   m_TagString: Untagged
@@ -139,19 +128,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabbingInput: {fileID: 11400000, guid: d6c501d96270fde43a50ff7d46b5c6d1, type: 2}
---- !u!135 &8909619879841903958
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909619879841903956}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0.1, z: 0}
+  radius:
+    useConstant: 1
+    constantValue: 0
+    variable: {fileID: 0}
 --- !u!1 &9105033383571285055
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,47 +1,10 @@
 using System;
+using InputManagement;
 using UnityEngine;
-using UnityEngine.Serialization;
 namespace Remapping
 {
     public class AvatarMapper : MonoBehaviour
     {
-        [SerializeField] private AvatarSwappingManager swappingManager;
-        
-        [SerializeField] private BodyMeasurements avatarMeasurements;
-
-        [SerializeField] private JointLocations avatarJoints;
-
-        [SerializeField] private bool activate;
-
-        private void Update()
-        {
-            if (activate)
-            {
-                swappingManager.LoadAvatar(avatarJoints);
-                activate = !activate;
-            }
-        }
-
-        public JointLocations AvatarJoints
-        {
-            get
-            {
-                return avatarJoints;
-            }
-        }
-        
-        public void MeasureAvatar()
-        {
-            // Easily Accessible Vector3 Positions
-            var leftHand = avatarJoints.leftHand.position;
-            var leftShoulder = avatarJoints.leftShoulder.position;
-            var rightShoulder = avatarJoints.rightShoulder.position;
-            var rightHand = avatarJoints.rightHand.position;
-
-            avatarMeasurements.leftArmLength.Value = (leftShoulder - leftHand).magnitude;
-            avatarMeasurements.rightArmLength.Value = (rightShoulder - rightHand).magnitude;
-        }
-
         [Serializable]
         public struct JointLocations
         {
@@ -52,6 +15,30 @@ namespace Remapping
             public Transform leftHip;
             public Transform rightHip;
         }
+        
+        [SerializeField] private AvatarSwappingManager swappingManager;
+        
+        [SerializeField] private DirectionalFloat avatarMeasurements;
+
+        [SerializeField] private JointLocations avatarJoints;
+
+        private void OnEnable()
+        {
+            swappingManager.LoadAvatar(avatarJoints);
+        }
+
+        public void MeasureAvatar()
+        {
+            // Easily Accessible Vector3 Positions
+            var leftHand = avatarJoints.leftHand.position;
+            var leftShoulder = avatarJoints.leftShoulder.position;
+            var rightShoulder = avatarJoints.rightShoulder.position;
+            var rightHand = avatarJoints.rightHand.position;
+
+            avatarMeasurements.Left.Value = (leftShoulder - leftHand).magnitude;
+            avatarMeasurements.Right.Value = (rightShoulder - rightHand).magnitude;
+        }
+
 
     }
 }
