@@ -1,8 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using Remapping;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class AvatarSwappingManager : MonoBehaviour
 {
@@ -24,8 +23,9 @@ public class AvatarSwappingManager : MonoBehaviour
         avatarSwapped.Event += LoadAvatar;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForEndOfFrame();
         foreach (var avatar in avatarRoots)
         {
             avatar.SetActive(false);

@@ -1,8 +1,5 @@
-using System;
 using UnityEngine;
-using InputManagement;
 using ReferenceVariables;
-using UnityEngine.Serialization;
 
 public class PlayerAssignment : MonoBehaviour
 {
@@ -16,7 +13,7 @@ public class PlayerAssignment : MonoBehaviour
 
     private void Update()
     {
-        SetPosition(headset, hmdPosition.Value + transform.position);
+        SetPosition(headset, hmdPosition.Value);
         SetPosition(leftController, leftControllerPosition.Value);
         SetPosition(rightController, rightControllerPosition.Value);
         
@@ -28,12 +25,12 @@ public class PlayerAssignment : MonoBehaviour
     private void SetPosition(Transform objectTransform, Vector3 objectPosition)
     {
         var position = objectPosition.x * character.right + objectPosition.y * character.up + objectPosition.z * character.forward;
-        objectTransform.position = position;
+        objectTransform.localPosition = position;
     }
 
     private void SetRotation(Transform objectTransform, Quaternion objectRotation)
     {
-        objectTransform.rotation = objectRotation * character.rotation;
+        objectTransform.localRotation = objectRotation * character.rotation;
     }
 
 }

@@ -63,8 +63,13 @@ namespace Remapping
         }
         private void SetPlacement(Transform objectTransform)
         {
-            var position = new Vector3(transform.position.x, transform.position.y, hmdTransform.position.z);
+            var position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             objectTransform.position = position;
+        }
+
+        private void OnDestroy()
+        {
+            userInput.ValueChanged -= OnActivation;
         }
     }
 }

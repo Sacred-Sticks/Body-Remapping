@@ -1,11 +1,13 @@
 using System;
 using InputManagement;
+using ReferenceVariables;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class Remapper : MonoBehaviour
 {
-
+    [SerializeField] private Transform headset;
+    [Space]
     [SerializeField] private DirectionalFloat userMeasurements;
     [SerializeField] private DirectionalFloat avatarMeasurements;
     [Space]
@@ -21,6 +23,7 @@ public class Remapper : MonoBehaviour
     [SerializeField] private Transform avatarLeftShoulder;
     [SerializeField] private Transform avatarRightShoulder;
     [Space]
+    [Header("Received Events")]
     [SerializeField] private EventBus remapAvatar;
 
     private void Awake()
@@ -38,10 +41,12 @@ public class Remapper : MonoBehaviour
 
     private void Update()
     {
+        var offset = headset.position;
+        offset.y = 0;
         float leftArmScale = avatarMeasurements.Left.Value / userMeasurements.Left.Value;
         float rightArmScale = avatarMeasurements.Right.Value / userMeasurements.Right.Value;
-        leftControllerSimulator.position = ScaleHand(leftController, leftShoulder, leftArmScale, avatarLeftShoulder);
-        rightControllerSimulator.position = ScaleHand(rightController, rightShoulder, rightArmScale, avatarRightShoulder);
+        leftControllerSimulator.position = ScaleHand(leftController, leftShoulder, leftArmScale, avatarLeftShoulder) + offset;
+        rightControllerSimulator.position = ScaleHand(rightController, rightShoulder, rightArmScale, avatarRightShoulder) + offset;
         leftControllerSimulator.rotation = leftController.rotation;
         rightControllerSimulator.rotation = rightController.rotation;
     }

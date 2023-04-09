@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc44f51bb076a741977248053f03934, type: 3}
   m_Name: HMDPosition
   m_EditorClassIdentifier: 
-  value: {x: 0, y: 0, z: 1.01}
+  value: {x: 0, y: 0, z: 0}
   resetValue: 0
   initialValue: {x: 0, y: 0, z: 0}

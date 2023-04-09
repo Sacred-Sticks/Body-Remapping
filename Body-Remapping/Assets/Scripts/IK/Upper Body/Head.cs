@@ -8,12 +8,11 @@ public class Head : MonoBehaviour
     private void LateUpdate()
     {
         rootObject.position = transform.position + headBodyOffset;
-        var rotation = followObject.rotation;
-        var forwardAxis = Vector3.forward;
-        var forwardDirection = rotation * forwardAxis;
-        rootObject.forward = forwardDirection;
         //rootObject.forward = Vector3.ProjectOnPlane(followObject.up, Vector3.up).normalized;
 
+        var position = transform.right * positionOffset.x + transform.forward * positionOffset.z;
+        transform.position = position;
+        
         transform.position = followObject.TransformPoint(positionOffset);
         transform.rotation = followObject.rotation * Quaternion.Euler(rotationOffset);
     }
