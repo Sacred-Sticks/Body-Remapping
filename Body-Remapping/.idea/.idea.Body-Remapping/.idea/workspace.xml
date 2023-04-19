@@ -3,22 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Input Manager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset/HMDPosition.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset/HMDPosition.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Left Arm User.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Left Arm User.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Right Arm User.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Right Arm User.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IK Setup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/CopyTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/CopyTransform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/PlayerAssignment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/PlayerAssignment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Upper Body/Head.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/Upper Body/Head.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/UserMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Debug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Debug/Debugger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Debug/Debugger.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +26,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debug/Debugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugging/TransformGizmo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IK/ScaleTransform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IK/VRRig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -148,6 +138,9 @@
       <workItem from="1680986563774" duration="3368000" />
       <workItem from="1681030349520" duration="3394000" />
       <workItem from="1681074254139" duration="1487000" />
+      <workItem from="1681148263174" duration="578000" />
+      <workItem from="1681150286306" duration="464000" />
+      <workItem from="1681777290369" duration="5621000" />
     </task>
     <servers />
   </component>

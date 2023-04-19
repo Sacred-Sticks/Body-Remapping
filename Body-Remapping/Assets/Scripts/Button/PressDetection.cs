@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class PressDetection : MonoBehaviour
 {
-    [SerializeField] private EventBus buttonPressed;
-    [SerializeField] private EventBus buttonReleased;
+    [SerializeField] private string buttonReleasedKey;
+    [SerializeField] private string buttonPressedKey;
     [SerializeField] private float activationDistance;
     [SerializeField] private bool canActivateConsecutively;
 
@@ -28,14 +28,10 @@ public class PressDetection : MonoBehaviour
 
     private void DeActivation()
     {
-
         if (!isActivated)
             return;
         isActivated = false;
-        if (!buttonReleased)
-            return;
-        var releasedArgs = new PressDetectedEventArgs();
-        buttonReleased.Trigger(this, releasedArgs);
+        EventManager.Trigger(buttonReleasedKey, new PressDetectedEventArgs(this));
     }
 
     private void Activation()
@@ -45,15 +41,14 @@ public class PressDetection : MonoBehaviour
             if (isActivated)
                 return;
         }
-        if (!buttonPressed)
-            return;
-        var pressedArgs = new PressDetectedEventArgs();
-        buttonPressed.Trigger(this, pressedArgs);
+        EventManager.Trigger(buttonPressedKey, new PressDetectedEventArgs(this));
         isActivated = true;
     }
 }
 
-public class PressDetectedEventArgs : EventArgs
+public class PressDetectedEventArgs : GameEvent
 {
-    
+    public PressDetectedEventArgs(object sender) : base(sender)
+    {
+    }
 }
