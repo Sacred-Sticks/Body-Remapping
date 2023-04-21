@@ -379,8 +379,8 @@ GameObject:
   - component: {fileID: 1299428908037072227}
   - component: {fileID: 4965310267653209881}
   - component: {fileID: 3142876202600960403}
-  - component: {fileID: 3142876202600960402}
   - component: {fileID: 3142876202600960428}
+  - component: {fileID: 165954197}
   m_Layer: 0
   m_Name: FBT Man
   m_TagString: Untagged
@@ -398,7 +398,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6798233638210242039}
   - {fileID: 2699503760555696269}
@@ -510,27 +510,6 @@ MonoBehaviour:
   - {fileID: 2158340926717797620}
   - {fileID: 4466299206837081120}
   - {fileID: 8801914792710403202}
---- !u!114 &3142876202600960402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820491198727208921}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653adf49147a26f40a3d8e4f3529e3e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sendAvatarData: {fileID: 0}
-  avatarMeasurements: {fileID: 11400000, guid: 52a42df6cef40e04abb626cfd28dad0e, type: 2}
-  avatarJoints:
-    leftHand: {fileID: 5746208431836206923}
-    leftShoulder: {fileID: 5034864068347056560}
-    rightShoulder: {fileID: 5100181476127858061}
-    rightHand: {fileID: 880288810032364864}
-    leftHip: {fileID: 3892990388517289099}
-    rightHip: {fileID: 7268172802946085576}
 --- !u!114 &3142876202600960428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,13 +523,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RigLayers:
-  - m_Rig: {fileID: 3142876202085159682}
-    m_Active: 1
-  - m_Rig: {fileID: 3142876202043734372}
-    m_Active: 1
   - m_Rig: {fileID: 392793100875733889}
     m_Active: 1
   m_Effectors: []
+--- !u!114 &165954197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820491198727208921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307ec21aeada934b9e160e56ee6cc8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadAvatarKey: LoadAvatar
 --- !u!1 &1911714634356612226
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +548,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6798233638210242039}
+  - component: {fileID: 1865488328}
+  - component: {fileID: 1865488329}
   m_Layer: 0
   m_Name: mixamorig:Hips
   m_TagString: Untagged
@@ -587,6 +577,44 @@ Transform:
   m_Father: {fileID: 1299428908037072227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1865488328
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911714634356612226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1865488329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911714634356612226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RigLayers:
+  - m_Rig: {fileID: 3142876202085159682}
+    m_Active: 1
+  - m_Rig: {fileID: 3142876202043734372}
+    m_Active: 1
+  m_Effectors: []
 --- !u!1 &2012168065670261757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1061,6 @@ GameObject:
   m_Component:
   - component: {fileID: 386739485609432601}
   - component: {fileID: 4113366761488190599}
-  - component: {fileID: 4835856415914348909}
   m_Layer: 0
   m_Name: Head IK
   m_TagString: Untagged
@@ -1107,40 +1134,6 @@ MonoBehaviour:
       z: 1
     m_MaintainPositionOffset: 0
     m_MaintainRotationOffset: 0
---- !u!114 &4835856415914348909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3051750572324740103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558a783db3c1fa74f87db170312a28b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  copyPosition: 1
-  positionAxis:
-    x: 1
-    y: 1
-    z: 1
-  posOffset: {x: 0, y: 0, z: 0}
-  positionMultiplier: 1
-  copyRotation: 1
-  rotationAxis:
-    x: 1
-    y: 1
-    z: 1
-  rotOffset: {x: 0, y: 0, z: 0}
-  rotationMultiplier: 1
-  copyScale: 0
-  scaleAxis:
-    x: 0
-    y: 0
-    z: 0
-  scaleOffset: {x: 0, y: 0, z: 0}
-  scaleMultiplier: 1
 --- !u!1 &3072431242891943253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1402,7 @@ MonoBehaviour:
     m_Bits: 2147483647
   positionOffset: {x: -0.2, y: 0.12, z: 0}
   normalOffset: {x: -147, y: 190, z: -3.5}
-  steppingSpeed: 5
+  steppingSpeed: 3
   steppingDistance: 0.75
   stepLength: 0.7
   steppingHeight: 0.2
@@ -1705,7 +1698,7 @@ MonoBehaviour:
     m_Bits: 2147483647
   positionOffset: {x: 0.2, y: 0.12, z: 0}
   normalOffset: {x: -147, y: 170, z: 6.1}
-  steppingSpeed: 5
+  steppingSpeed: 3
   steppingDistance: 0.75
   stepLength: 0.7
   steppingHeight: 0.2
@@ -1808,6 +1801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5746208431836206923}
+  - component: {fileID: 1299490499}
   m_Layer: 0
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
@@ -1835,6 +1829,19 @@ Transform:
   m_Father: {fileID: 8310696721025023089}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1299490499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3162520886971173700}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09, y: 0.26, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &3212544021392617401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1939,6 +1946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880288810032364864}
+  - component: {fileID: 2066813784}
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -1966,6 +1974,19 @@ Transform:
   m_Father: {fileID: 3896062420253243168}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2066813784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3471544728978665353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09, y: 0.26, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &3510076629259018468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,7 +2601,7 @@ MonoBehaviour:
     m_SourceObjects:
       m_Length: 1
       m_Item0:
-        transform: {fileID: 0}
+        transform: {fileID: 6316968579401336851}
         weight: 1
       m_Item1:
         transform: {fileID: 0}
@@ -2625,6 +2646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ce7ff5e99cee14f955f06f215082f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  axis: 0
   headMap:
     targetVR: {fileID: 0}
     targetRig: {fileID: 386739485609432601}
@@ -2634,14 +2656,14 @@ MonoBehaviour:
     targetVR: {fileID: 0}
     targetRig: {fileID: 3142876203553130463}
     positionOffset: {x: 0, y: 0, z: 0}
-    rotationOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 90, z: 90}
   rightControllerMap:
     targetVR: {fileID: 0}
     targetRig: {fileID: 3142876202957508362}
     positionOffset: {x: 0, y: 0, z: 0}
-    rotationOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 90, z: -90}
   headConstraint: {fileID: 386739485609432601}
-  customOffset: {x: 0, y: -1.22, z: 0}
+  customOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &5108885047196525695
 GameObject:
   m_ObjectHideFlags: 0
