@@ -16,7 +16,7 @@ namespace Remapping
             public Transform rightHip;
         }
         
-        [SerializeField] private EventBus sendAvatarData;
+        [SerializeField] private string avatarDataKey;
         
         [SerializeField] private DirectionalFloat avatarMeasurements;
 
@@ -24,8 +24,7 @@ namespace Remapping
 
         private void Start()
         {
-            var args = new AvatarJointEventArgs(avatarJoints.leftShoulder, avatarJoints.rightShoulder);
-            sendAvatarData.Trigger(this, args);
+            EventManager.Trigger(avatarDataKey, new AvatarJointEvent(this, avatarJoints.leftShoulder, avatarJoints.rightShoulder));
         }
 
         public void MeasureAvatar()

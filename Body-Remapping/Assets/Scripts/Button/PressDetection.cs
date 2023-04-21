@@ -31,7 +31,7 @@ public class PressDetection : MonoBehaviour
         if (!isActivated)
             return;
         isActivated = false;
-        EventManager.Trigger(buttonReleasedKey, new PressDetectedEventArgs(this));
+        EventManager.Trigger(buttonReleasedKey, new PressDetectedEvent(this));
     }
 
     private void Activation()
@@ -41,14 +41,14 @@ public class PressDetection : MonoBehaviour
             if (isActivated)
                 return;
         }
-        EventManager.Trigger(buttonPressedKey, new PressDetectedEventArgs(this));
+        EventManager.Trigger(buttonPressedKey, new PressDetectedEvent(this));
         isActivated = true;
     }
 }
 
-public class PressDetectedEventArgs : GameEvent
+public class PressDetectedEvent : GameEvent
 {
-    public PressDetectedEventArgs(object sender) : base(sender)
+    public PressDetectedEvent(object sender) : base(sender)
     {
     }
 }

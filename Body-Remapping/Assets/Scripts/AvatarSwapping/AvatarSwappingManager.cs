@@ -2,25 +2,51 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AvatarSwappingManager : MonoBehaviour
 {
     [Header("Received Events")]
-    [SerializeField] private EventBus takeAvatarData;
-    [SerializeField] private EventBus avatarSwapped;
+    [SerializeField] private string avatarDataKey;
+    [SerializeField] private string swapAvatarKey;
     [Space]
     [Header("Sending Events")]
-    [SerializeField] private EventBus changeMapping;
+    [SerializeField] private string changeMappingKey;
 
-    private readonly List<AvatarJointEventArgs> avatarsData = new List<AvatarJointEventArgs>();
+    [SerializeField] private List<AvatarJointEvent> avatarsData = new List<AvatarJointEvent>();
     private readonly List<GameObject> avatarRoots = new List<GameObject>();
 
     private int activeAvatarIndex;
 
-    private void Awake()
+    private void OnEnable()
     {
-        takeAvatarData.Event += OnTakeAvatarDataEvent;
-        avatarSwapped.Event += LoadAvatar;
+        EventManager.AddListener(avatarDataKey, ReceiveAvatarData);
+        //EventManager.AddListener(swapAvatarKey, SwapAvatar);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.RemoveListener(avatarDataKey, ReceiveAvatarData);
+        //EventManager.RemoveListener(swapAvatarKey, SwapAvatar);
+    }
+
+    private void SwapAvatar(GameEvent obj)
+    {
+        avatarRoots[activeAvatarIndex].SetActive(false);
+        activeAvatarIndex++;
+        if (activeAvatarIndex >= avatarsData.Count)
+            activeAvatarIndex = 0;
+        avatarRoots[activeAvatarIndex].SetActive(true);
+        EventManager.Trigger(changeMappingKey, avatarsData[activeAvatarIndex]);
+    }
+
+    private void ReceiveAvatarData(GameEvent obj)
+    {
+        if (obj is not AvatarJointEvent args)
+            return;
+        avatarsData.Add(args);
+        if (args.Sender is Component component)
+            avatarRoots.Add(component.gameObject);
     }
 
     private IEnumerator Start()
@@ -30,29 +56,12 @@ public class AvatarSwappingManager : MonoBehaviour
         {
             avatar.SetActive(false);
         }
-    }
-
-    private void OnTakeAvatarDataEvent(object sender, EventArgs e)
-    {
-        if (e is not AvatarJointEventArgs args)
-            return;
-        avatarsData.Add(args);
-        if (sender is Component component)
-            avatarRoots.Add(component.gameObject);
-    }
-
-    public void LoadAvatar(object sender, EventArgs e)
-    {
-        avatarRoots[activeAvatarIndex].SetActive(false);
-        activeAvatarIndex++;
-        if (activeAvatarIndex >= avatarsData.Count)
-            activeAvatarIndex = 0;
-        avatarRoots[activeAvatarIndex].SetActive(true);
-        changeMapping.Trigger(this, avatarsData[activeAvatarIndex]);
+        avatarRoots[0].SetActive(true);
     }
 }
 
-public class AvatarJointEventArgs : EventArgs
+[Serializable]
+public class AvatarJointEvent : GameEvent
 {
     public Transform LeftShoulder
     {
@@ -65,7 +74,7 @@ public class AvatarJointEventArgs : EventArgs
         set;
     }
 
-    public AvatarJointEventArgs(Transform leftShoulder, Transform rightShoulder)
+    public AvatarJointEvent(object sender, Transform leftShoulder, Transform rightShoulder) : base(sender)
     {
         LeftShoulder = leftShoulder;
         RightShoulder = rightShoulder;

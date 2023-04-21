@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Debug.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Debug/Debugger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Debug/Debugger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/VRRig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/VRRig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Editor/References/QuaternionReferenceEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/References/QuaternionReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Avatar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugging/TransformGizmo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IK/ScaleTransform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IK/VRRig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Offset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SwapAvatar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.1.1/Runtime/AnimationRig/Constraints/MultiPositionConstraint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/InputManagerStateMonitors.cs" root0="SKIP_HIGHLIGHTING" />
@@ -141,6 +145,7 @@
       <workItem from="1681148263174" duration="578000" />
       <workItem from="1681150286306" duration="464000" />
       <workItem from="1681777290369" duration="5621000" />
+      <workItem from="1682107620352" duration="6067000" />
     </task>
     <servers />
   </component>
@@ -167,19 +172,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs</url>
-          <line>45</line>
-          <properties documentPath="C:\Users\Ackma\OneDrive\Documents\GitHub\Body-Remapping\Body-Remapping\Assets\Scripts\AvatarSwapping\AvatarSwappingManager.cs" initialLine="45" containingFunctionPresentation="method 'LoadAvatar'">
-            <startOffsets>
-              <option value="1262" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1310" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

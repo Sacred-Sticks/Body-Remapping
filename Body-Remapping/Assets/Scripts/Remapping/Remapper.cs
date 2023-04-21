@@ -24,16 +24,21 @@ public class Remapper : MonoBehaviour
     [SerializeField] private Transform avatarRightShoulder;
     [Space]
     [Header("Received Events")]
-    [SerializeField] private EventBus remapAvatar;
+    [SerializeField] private string remapAvatarKey;
 
-    private void Awake()
+    private void OnEnable()
     {
-        remapAvatar.Event += OnEventCalled;
+        EventManager.AddListener(remapAvatarKey, OnAvatarRemap);
     }
 
-    private void OnEventCalled(object sender, EventArgs e)
+    private void OnDisable()
     {
-        if (e is not AvatarJointEventArgs args)
+        EventManager.RemoveListener(remapAvatarKey, OnAvatarRemap);
+    }
+
+    private void OnAvatarRemap(GameEvent obj)
+    {
+        if (obj is not AvatarJointEvent args)
             return;
         avatarLeftShoulder = args.LeftShoulder;
         avatarRightShoulder = args.RightShoulder;
