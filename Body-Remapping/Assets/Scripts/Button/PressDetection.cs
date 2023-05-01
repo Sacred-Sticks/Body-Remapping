@@ -7,29 +7,56 @@ public class PressDetection : MonoBehaviour
     [SerializeField] private string buttonPressedKey;
     [SerializeField] private float activationDistance;
     [SerializeField] private bool canActivateConsecutively;
+    [SerializeField] private Direction direction;
 
     private Vector3 initialPosition;
+    private Vector3 targetPosition;
     private bool isActivated;
+
+    private const double TOLERANCE = 0.00001;
+
+    private enum Direction
+    {
+        PositiveX,
+        NegativeX,
+        PositiveY,
+        NegativeY,
+        PositiveZ,
+        NegativeZ,
+    }
 
     private void Start()
     {
         initialPosition = transform.position;
+        targetPosition = direction switch
+        {
+
+            Direction.PositiveX => initialPosition + transform.right * activationDistance,
+            Direction.NegativeX => initialPosition - transform.right * activationDistance,
+            Direction.PositiveY => initialPosition + transform.up * activationDistance,
+            Direction.NegativeY => initialPosition - transform.up * activationDistance,
+            Direction.PositiveZ => initialPosition + transform.forward * activationDistance,
+            Direction.NegativeZ => initialPosition - transform.forward * activationDistance,
+            _ => throw new ArgumentOutOfRangeException()
+        };
     }
 
     private void Update()
     {
-        if (Vector3.SqrMagnitude(transform.position - initialPosition) < Mathf.Pow(activationDistance, 2))
+        if (!isActivated)
         {
-            DeActivation();
-            return;
+            if (Vector3.SqrMagnitude(transform.position - targetPosition) < TOLERANCE)
+                Activation();
         }
-        Activation();
+        else
+        {
+            if (Vector3.SqrMagnitude(transform.position - initialPosition) < TOLERANCE)
+                DeActivation();
+        }
     }
 
     private void DeActivation()
     {
-        if (!isActivated)
-            return;
         isActivated = false;
         EventManager.Trigger(buttonReleasedKey, new PressDetectedEvent(this));
     }
