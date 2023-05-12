@@ -3,51 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips/Grips.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips/Grips.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips/LeftGrip.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips/LeftGrip.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips/RightGrip.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Grips/RightGrip.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Joysticks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Joysticks/LeftJoystick.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Joysticks/LeftJoystick.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset/HMDPosition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset/HMDPosition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset/HMDRotation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Headset/HMDRotation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Left Controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Left Controller/LeftControllerPosition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Left Controller/LeftControllerPosition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Left Controller/LeftControllerRotation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Left Controller/LeftControllerRotation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Right Controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Right Controller/RightControllerPosition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Right Controller/RightControllerPosition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Right Controller/RightControllerRotation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Physical Inputs/Right Controller/RightControllerRotation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/New Controls.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/New Controls.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/Soldier/LeftArmSoldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/Soldier/LeftArmSoldier.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/Soldier/RightArmSoldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Proportions/Soldier/RightArmSoldier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/LeftTrigger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/LeftTrigger.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/RightTrigger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/RightTrigger.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Left Arm User.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Left Arm User.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Right Arm User.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Right Arm User.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/User Arms.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/User Arms.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XR Origin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XR Origin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Soldier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Soldier.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Avatar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Avatar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AvatarSwapping/AvatarSwappingManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabbable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabbable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/Remapper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwapAvatar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwapAvatar.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,10 +108,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19868">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19868" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -187,7 +159,9 @@
       <workItem from="1682714751168" duration="222000" />
       <workItem from="1682719955993" duration="3387000" />
       <workItem from="1683848997898" duration="4571000" />
-      <workItem from="1683857129451" duration="2595000" />
+      <workItem from="1683857129451" duration="7917000" />
+      <workItem from="1683870060545" duration="1628000" />
+      <workItem from="1683871884542" duration="1306000" />
     </task>
     <servers />
   </component>

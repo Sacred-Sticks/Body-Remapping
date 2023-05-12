@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &655011982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655011983}
+  m_Layer: 0
+  m_Name: Palm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655011983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655011982}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.006, y: 0.066, z: 0.016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 880288810032364864}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1826004775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1826004776}
+  m_Layer: 0
+  m_Name: Palm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1826004776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826004775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.006, y: 0.066, z: 0.016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5746208431836206923}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &16793006829071923
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +443,7 @@ GameObject:
   - component: {fileID: 3142876202600960403}
   - component: {fileID: 3142876202600960428}
   - component: {fileID: 165954197}
+  - component: {fileID: 1548903566}
   m_Layer: 0
   m_Name: FBT Man
   m_TagString: Untagged
@@ -538,7 +601,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6307ec21aeada934b9e160e56ee6cc8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armLengths: {fileID: 11400000, guid: 52a42df6cef40e04abb626cfd28dad0e, type: 2}
+  shoulders:
+    leftShoulder: {fileID: 8060808475206874891}
+    rightShoulder: {fileID: 1701767695227699406}
   loadAvatarKey: LoadAvatar
+--- !u!114 &1548903566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820491198727208921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653adf49147a26f40a3d8e4f3529e3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatarMeasurements: {fileID: 11400000, guid: 52a42df6cef40e04abb626cfd28dad0e, type: 2}
+  avatarJoints:
+    leftHand: {fileID: 5746208431836206923}
+    leftShoulder: {fileID: 5034864068347056560}
+    rightShoulder: {fileID: 5100181476127858061}
+    rightHand: {fileID: 880288810032364864}
 --- !u!1 &1911714634356612226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,7 +1491,7 @@ MonoBehaviour:
   steppingDistance: 0.75
   stepLength: 0.7
   steppingHeight: 0.2
-  stepDetectionHeight: 3
+  stepDetectionHeight: 5
 --- !u!1 &3142876202329398026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,7 +1787,7 @@ MonoBehaviour:
   steppingDistance: 0.75
   stepLength: 0.7
   steppingHeight: 0.2
-  stepDetectionHeight: 3
+  stepDetectionHeight: 5
 --- !u!1 &3142876203513276557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,6 +1887,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5746208431836206923}
   - component: {fileID: 1299490499}
+  - component: {fileID: 17103964}
+  - component: {fileID: 17103963}
   m_Layer: 0
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
@@ -1826,6 +1913,7 @@ Transform:
   - {fileID: 6080199133358819085}
   - {fileID: 5655839081089880791}
   - {fileID: 6020458023785074398}
+  - {fileID: 1826004776}
   m_Father: {fileID: 8310696721025023089}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1842,6 +1930,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.26, z: 0.03}
   m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!54 &17103964
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3162520886971173700}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &17103963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3162520886971173700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d77391a65f7bc844a26d05827dba7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gripInput: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
+  inputTolerance:
+    useConstant: 1
+    constantValue: 0.5
+    variable: {fileID: 0}
+  palm: {fileID: 1826004776}
+  reachDistance:
+    useConstant: 1
+    constantValue: 0.25
+    variable: {fileID: 0}
 --- !u!1 &3212544021392617401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +2073,8 @@ GameObject:
   m_Component:
   - component: {fileID: 880288810032364864}
   - component: {fileID: 2066813784}
+  - component: {fileID: 1806157836}
+  - component: {fileID: 1806157835}
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -1971,6 +2099,7 @@ Transform:
   - {fileID: 360509870297549536}
   - {fileID: 7714297230130029956}
   - {fileID: 6969557901967824502}
+  - {fileID: 655011983}
   m_Father: {fileID: 3896062420253243168}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1987,6 +2116,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.26, z: 0.03}
   m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!54 &1806157836
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3471544728978665353}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &1806157835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3471544728978665353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d77391a65f7bc844a26d05827dba7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gripInput: {fileID: 11400000, guid: 0dc6938936cff5f40a080df87f3501a6, type: 2}
+  inputTolerance:
+    useConstant: 1
+    constantValue: 0.5
+    variable: {fileID: 0}
+  palm: {fileID: 655011983}
+  reachDistance:
+    useConstant: 1
+    constantValue: 0.25
+    variable: {fileID: 0}
 --- !u!1 &3510076629259018468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,7 +2817,7 @@ MonoBehaviour:
   headMap:
     targetVR: {fileID: 0}
     targetRig: {fileID: 386739485609432601}
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0, y: -0.1, z: -0.2}
     rotationOffset: {x: 0, y: 0, z: 0}
   leftControllerMap:
     targetVR: {fileID: 0}
@@ -2661,7 +2828,7 @@ MonoBehaviour:
     targetVR: {fileID: 0}
     targetRig: {fileID: 3142876202957508362}
     positionOffset: {x: 0, y: 0, z: 0}
-    rotationOffset: {x: 0, y: 90, z: -90}
+    rotationOffset: {x: 0, y: -90, z: -90}
   headConstraint: {fileID: 386739485609432601}
   customOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &5108885047196525695

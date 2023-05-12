@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using ReferenceVariables;
 using UnityEngine;
 
@@ -7,94 +8,90 @@ namespace Grabbing
     [RequireComponent(typeof(Rigidbody))]
     public class Grabber : MonoBehaviour
     {
-        [SerializeField] private FloatVariable grabbingInput;
-        [SerializeField] private FloatReference radius;
-        
+        [SerializeField] private FloatVariable gripInput;
+        [SerializeField] private FloatReference inputTolerance;
+        [Space]
+        [SerializeField] private Transform palm;
+        [SerializeField] private FloatReference reachDistance;
+
         private Rigidbody body;
-        private Rigidbody grabbedBody;
-        private Joint localJoint;
-        private Joint grabbedJoint;
 
         private bool isGrabbing;
+        private GameObject heldObject;
+        private Transform grabPoint;
+        private FixedJoint localJoint;
+        private FixedJoint externalJoint;
+
+        private Grabbable grabbed;
 
         private void Awake()
         {
             body = GetComponent<Rigidbody>();
-            grabbingInput.ValueChanged += OnGrabbingInputValueChanged;
         }
 
-        private void OnGrabbingInputValueChanged(object sender, EventArgs e)
+        private void OnEnable()
         {
-            switch (grabbingInput.Value)
-            {
-                case 0:
-                    ReleaseGrabbedObject();
-                    break;
-                case 1:
-                    GrabObject();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(grabbingInput));
-            }
+            gripInput.ValueChanged += OnGripChanged;
         }
 
-        private void GrabObject()
+        private void OnDisable()
         {
-            if (isGrabbing)
+            gripInput.ValueChanged -= OnGripChanged;
+            Release();
+        }
+
+        private void OnGripChanged(object sender, EventArgs e)
+        {
+            if (gripInput.Value < 1 - inputTolerance.Value)
+                Release();
+            if (gripInput.Value > inputTolerance.Value)
+                Grab();
+        }
+
+        private void Grab()
+        {
+            if (isGrabbing || heldObject)
                 return;
-            SearchForGrabbable();
-            if (!grabbedBody)
+            var objectToGrab = Physics.OverlapSphere(palm.position, reachDistance.Value)
+                .FirstOrDefault(c => c.GetComponent<Grabbable>());
+            if (!objectToGrab)
                 return;
+            grabbed = objectToGrab.GetComponent<Grabbable>();
+            heldObject = objectToGrab.gameObject;
+
             isGrabbing = true;
-            // Input is pressed, the grabber is within the radius of a grabbable object
-            localJoint = gameObject.AddComponent<FixedJoint>();
-            grabbedJoint = grabbedBody.gameObject.AddComponent<FixedJoint>();
-            localJoint.connectedBody = grabbedBody;
-            grabbedJoint.connectedBody = body;
+
+            localJoint = CreateJoint(gameObject, grabbed.Body);
+            externalJoint = CreateJoint(heldObject, body);
         }
 
-        private void ReleaseGrabbedObject()
+        private void Release()
         {
-            if (!isGrabbing)
-                return;
-            if (!grabbedBody)
-                return;
-            isGrabbing = false;
             if (localJoint)
                 Destroy(localJoint);
-            if (grabbedJoint)
-                Destroy(grabbedJoint);
+            if (externalJoint)
+                Destroy(externalJoint);
+            if (grabbed)
+            {
+                grabbed.Body.collisionDetectionMode = CollisionDetectionMode.Discrete;
+                grabbed.Body.interpolation = RigidbodyInterpolation.None;
+                grabbed = null;
+            }
+
+            isGrabbing = false;
+            heldObject = null;
         }
 
-        private void SearchForGrabbable()
+        private FixedJoint CreateJoint(GameObject origin, Rigidbody connectedBody)
         {
-            var results = Physics.OverlapSphere(transform.position, radius.Value);
-            foreach (var col in results)
-            {
-                var result = col.gameObject;
-                if (result == gameObject)
-                    continue;
+            var joint = origin.AddComponent<FixedJoint>();
+            joint.connectedBody = connectedBody;
+            joint.breakForce = float.PositiveInfinity;
+            joint.breakTorque = float.PositiveInfinity;
 
-                result.TryGetComponent<Grabbable>(out var grabbableComponent);
-                
-                while (result.transform.parent)
-                {
-                    if (!grabbableComponent)
-                    {
-                        result = result.transform.parent.gameObject;
-                        result.TryGetComponent(out grabbableComponent);
-                        continue;
-                    }
-                    grabbedBody = grabbableComponent.GetComponent<Rigidbody>();
-                    return;
-                }
-
-                if (!grabbableComponent)
-                    continue;
-                grabbedBody = result.GetComponent<Rigidbody>();
-                return;
-            }
-            grabbedBody = null;
+            connectedBody.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            connectedBody.interpolation = RigidbodyInterpolation.Interpolate;
+            return joint;
         }
     }
 }
