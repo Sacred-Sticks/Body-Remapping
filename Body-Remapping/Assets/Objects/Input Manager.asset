@@ -13,213 +13,42 @@ MonoBehaviour:
   m_Name: Input Manager
   m_EditorClassIdentifier: 
   inputActionsData:
-  - binding: <XRHMD>/devicePosition
-    actionType: 0
-    variable: {fileID: 11400000, guid: 8215da0990303cf4793b256ad193db65, type: 2}
-  - binding: <XRHMD>/deviceRotation
-    actionType: 0
-    variable: {fileID: 11400000, guid: ab090394203eacc4a8bc702d50a45397, type: 2}
-  - binding: <XRController>{LeftHand}/devicePosition
-    actionType: 0
-    variable: {fileID: 11400000, guid: 9d6cdf135e760d24b9a45513f3d1809b, type: 2}
-  - binding: <XRController>{LeftHand}/deviceRotation
-    actionType: 0
-    variable: {fileID: 11400000, guid: a23297b3ee994c247af62ff87451f35c, type: 2}
-  - binding: <XRController>{RightHand}/devicePosition
-    actionType: 0
-    variable: {fileID: 11400000, guid: 7a38ad73066222f438a7f278eb74e6ab, type: 2}
-  - binding: <XRController>{RightHand}/deviceRotation
-    actionType: 0
-    variable: {fileID: 11400000, guid: dd254144f1d2178478e93057346b37bf, type: 2}
   - binding: <XRController>{LeftHand}/triggerPressed
     actionType: 0
     variable: {fileID: 11400000, guid: 6bf9c36122d481249a7bf742f0767be9, type: 2}
   - binding: <XRController>{RightHand}/triggerPressed
     actionType: 0
     variable: {fileID: 11400000, guid: 26d1986603eae9b47bd00fd48dbc6d78, type: 2}
-  - binding: <XRController>{LeftHand}/gripPressed
-    actionType: 0
-    variable: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
-  - binding: <XRController>{RightHand}/gripPressed
-    actionType: 0
-    variable: {fileID: 11400000, guid: d6c501d96270fde43a50ff7d46b5c6d1, type: 2}
-  - binding: <XRController>{LeftHand}/joystick
-    actionType: 0
-    variable: {fileID: 11400000, guid: 7907ff9c40fd42245b1583e9fdc70ee3, type: 2}
   inputActions:
-  - m_Name: Element 0
+  - m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 5d6ce9da-9195-439c-a75e-fb759d4bb437
+    m_Id: 
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 97903d03-ee6c-4d06-b423-3dd78656a61b
-      m_Path: <XRHMD>/devicePosition
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 0
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 1
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 67ecf3ee-5176-46ff-84b0-d0765296f904
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 26cf160f-784b-476e-95be-eb41627676dd
-      m_Path: <XRHMD>/deviceRotation
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 1
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 2
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c5b2dec3-5a39-4646-b340-2bf68d5e0883
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 3921e72d-d75b-4a95-9237-a15717938b38
-      m_Path: <XRController>{LeftHand}/devicePosition
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 2
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 3
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 2738782b-50a1-430c-af50-058660d602cd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c01714e6-83b2-4600-9405-38a00102e7c0
-      m_Path: <XRController>{LeftHand}/deviceRotation
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 3
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 4
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0ec8ef4f-35d0-419d-9c55-974730299cf4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: db2469bc-ccf6-41d3-8153-1ab1636a678c
-      m_Path: <XRController>{RightHand}/devicePosition
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 4
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 5
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3a9d9c1a-e4dd-496e-a5f8-f633a248743b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c4d23eb8-381d-419a-8439-cb4760d78722
-      m_Path: <XRController>{RightHand}/deviceRotation
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 5
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 6
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 005810ed-9d92-4d87-84d1-745b830ae450
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: ac601d31-d519-4d66-815a-1ef737630ab5
+      m_Id: 
       m_Path: <XRController>{LeftHand}/triggerPressed
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Element 6
+      m_Action: 
       m_Flags: 0
     m_Flags: 0
-  - m_Name: Element 7
+  - m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 2ec7fc39-844a-4437-9b97-af43ec5c069d
+    m_Id: 
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 4ddee8e2-e838-470a-8e42-6c70a9a74f13
+      m_Id: 
       m_Path: <XRController>{RightHand}/triggerPressed
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Element 7
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 8
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9c34c4f4-55b1-4c71-b002-29b4d96d4e46
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 672d8e83-f433-46d8-ac9b-497009249eba
-      m_Path: <XRController>{LeftHand}/gripPressed
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 8
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 9
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f2c8e24b-83a0-4f50-a181-ebe90427cc6d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 1281ace6-d223-4ee4-b28f-d7c1d88973fc
-      m_Path: <XRController>{RightHand}/gripPressed
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 9
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Element 10
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 54ff6fa3-ccc1-42b1-bc1c-8bc83ae55533
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 931cdc0e-d527-4887-8d9c-747e2b8bdc2b
-      m_Path: <XRController>{LeftHand}/joystick
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 10
+      m_Action: 
       m_Flags: 0
     m_Flags: 0
