@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &562028240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562028241}
+  m_Layer: 0
+  m_Name: Palm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562028241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562028240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0737, z: 0.0163}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3140908276144917576}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1021646109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021646110}
+  m_Layer: 0
+  m_Name: Palm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1021646110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021646109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.0737, z: 0.0163}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7502846837527324227}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3026176444498313
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +388,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7502846837527324227}
+  - component: {fileID: 842413041}
+  - component: {fileID: 842413039}
+  - component: {fileID: 842413040}
   m_Layer: 0
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
@@ -350,9 +415,61 @@ Transform:
   - {fileID: 8340914485891216901}
   - {fileID: 7628049659527390175}
   - {fileID: 8371386596046749654}
+  - {fileID: 1021646110}
   m_Father: {fileID: 6121609943884369273}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &842413041
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883359255424580172}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &842413039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883359255424580172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1125, y: 0.21, z: 0.05}
+  m_Center: {x: 0.0125, y: 0.1, z: -0.01}
+--- !u!114 &842413040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883359255424580172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d77391a65f7bc844a26d05827dba7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gripInput: {fileID: 11400000, guid: 35d80711b3c7ee549a3f33c59085a8bc, type: 2}
+  inputTolerance:
+    useConstant: 1
+    constantValue: 0.5
+    variable: {fileID: 0}
+  palm: {fileID: 1021646110}
+  reachDistance:
+    useConstant: 1
+    constantValue: 0.25
+    variable: {fileID: 0}
 --- !u!1 &937490353679494237
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +639,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3140908276144917576}
+  - component: {fileID: 1764130464}
+  - component: {fileID: 1764130462}
+  - component: {fileID: 1764130463}
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -546,9 +666,61 @@ Transform:
   - {fileID: 2495307264719764456}
   - {fileID: 5525746424910124172}
   - {fileID: 5123128876767520638}
+  - {fileID: 562028241}
   m_Father: {fileID: 1274603686310987304}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1764130464
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696927852247522945}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1764130462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696927852247522945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1125, y: 0.21, z: 0.05}
+  m_Center: {x: -0.0125, y: 0.1, z: -0.01}
+--- !u!114 &1764130463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696927852247522945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d77391a65f7bc844a26d05827dba7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gripInput: {fileID: 11400000, guid: 0dc6938936cff5f40a080df87f3501a6, type: 2}
+  inputTolerance:
+    useConstant: 1
+    constantValue: 0.5
+    variable: {fileID: 0}
+  palm: {fileID: 562028241}
+  reachDistance:
+    useConstant: 1
+    constantValue: 0.25
+    variable: {fileID: 0}
 --- !u!1 &1758993502155146866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,13 +1383,14 @@ GameObject:
   - component: {fileID: 4531318814709976786}
   - component: {fileID: 4531318814709976787}
   - component: {fileID: 4531318814709976784}
+  - component: {fileID: 536339967}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3866809602454934635
 Transform:
   m_ObjectHideFlags: 0
@@ -1370,7 +1543,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6307ec21aeada934b9e160e56ee6cc8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armLengths: {fileID: 11400000, guid: eebea4627f260d24bb214155d33ce525, type: 2}
+  shoulders:
+    leftShoulder: {fileID: 5223168363779376643}
+    rightShoulder: {fileID: 3475707844093899206}
   loadAvatarKey: LoadAvatar
+--- !u!114 &536339967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531318814709976785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653adf49147a26f40a3d8e4f3529e3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatarMeasurements: {fileID: 11400000, guid: eebea4627f260d24bb214155d33ce525, type: 2}
+  avatarJoints:
+    leftHand: {fileID: 7502846837527324227}
+    leftShoulder: {fileID: 7097316066933432504}
+    rightShoulder: {fileID: 7018483344126635141}
+    rightHand: {fileID: 3140908276144917576}
 --- !u!1 &4557112428245664208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,7 +1803,7 @@ MonoBehaviour:
   steppingDistance: 0.75
   stepLength: 0.7
   steppingHeight: 0.2
-  stepDetectionHeight: 3
+  stepDetectionHeight: 5
 --- !u!1 &4874104785897054329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,12 +2428,12 @@ MonoBehaviour:
     targetVR: {fileID: 0}
     targetRig: {fileID: 4874104787304632494}
     positionOffset: {x: 0, y: 0, z: 0}
-    rotationOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 90, z: 90}
   rightControllerMap:
     targetVR: {fileID: 0}
     targetRig: {fileID: 4874104786461100735}
     positionOffset: {x: 0, y: 0, z: 0}
-    rotationOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 180, y: 90, z: 90}
   headConstraint: {fileID: 4874104785899444592}
   customOffset: {x: 0, y: 0.325, z: 0}
 --- !u!1 &4874104787605144484
@@ -2392,7 +2587,7 @@ MonoBehaviour:
   steppingDistance: 0.75
   stepLength: 0.7
   steppingHeight: 0.2
-  stepDetectionHeight: 3
+  stepDetectionHeight: 5
 --- !u!1 &5165958624933067539
 GameObject:
   m_ObjectHideFlags: 0

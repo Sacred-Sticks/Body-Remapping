@@ -47,8 +47,8 @@ public class IKFootSolver : MonoBehaviour
             {
                 lerpPercentage = 0;
                 int direction = (target.InverseTransformPoint(hit.point) - target.InverseTransformPoint(nextPosition)).z > 0 ? 1 : -1;
-                nextPosition = hit.point + (transform.forward * (direction * stepLength));
-                nextNormal = hit.normal;
+                nextPosition = hit.point + transform.forward * (direction * stepLength);
+                nextNormal = hit.normal + Vector3.ProjectOnPlane(target.forward, hit.normal);
             }
         }
 

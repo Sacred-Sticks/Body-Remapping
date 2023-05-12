@@ -5,19 +5,7 @@ namespace Grabbing
     [RequireComponent(typeof(Rigidbody))]
     public class Grabbable : MonoBehaviour
     {
-        public Rigidbody Body
-        {
-            get
-            {
-                return body;
-            }
-            private set
-            {
-                body = value;
-            }
-        }
-    
-        private Rigidbody body;
+        public Rigidbody Body { get; private set; }
 
         private void Awake()
         {

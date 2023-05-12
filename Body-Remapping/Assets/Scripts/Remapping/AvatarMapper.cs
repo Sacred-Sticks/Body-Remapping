@@ -12,8 +12,6 @@ namespace Remapping
             public Transform leftShoulder;
             public Transform rightShoulder;
             public Transform rightHand;
-            public Transform leftHip;
-            public Transform rightHip;
         }
         
         [SerializeField] private DirectionalFloat avatarMeasurements;
