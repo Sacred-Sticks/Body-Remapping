@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Body-Remapping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/LeftTrigger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/LeftTrigger.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/RightTrigger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Inputs/Triggers/RightTrigger.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Left Arm User.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Left Arm User.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Right Arm User.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/Right Arm User.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/User Arms.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Proportions/User/User Arms.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FBT Man.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Soldier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Soldier.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabbable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabbable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grabbing/Grabber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IK/Lower Body/IKFootSolver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Remapping/AvatarMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="7fcb4418-3735-4bbc-ab8b-db060c48c530" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,12 +19,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/References/QuaternionReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Packages/ReferenceVariables/Scripts/Variables/QuaternionVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/PressDetection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugging/TransformGizmo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IK/ScaleTransform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IK/VRRig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Offset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Remapping/Mapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.1.1/Runtime/AnimationRig/Constraints/MultiPositionConstraint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
@@ -161,7 +138,7 @@
       <workItem from="1683848997898" duration="4571000" />
       <workItem from="1683857129451" duration="7917000" />
       <workItem from="1683870060545" duration="1628000" />
-      <workItem from="1683871884542" duration="1306000" />
+      <workItem from="1683871884542" duration="1911000" />
     </task>
     <servers />
   </component>
